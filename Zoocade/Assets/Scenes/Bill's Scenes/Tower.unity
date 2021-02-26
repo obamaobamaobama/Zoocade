@@ -588,7 +588,7 @@ MonoBehaviour:
   timer: 0
   speed: 3
   player1or2: 'P2:'
-  upCheckDistance: 0.5
+  upCheckDistance: 0.07
 --- !u!212 &187073369
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1203,7 +1203,7 @@ MonoBehaviour:
   timer: 0
   speed: 3
   player1or2: 'P1:'
-  upCheckDistance: 0.1
+  upCheckDistance: 0.07
 --- !u!212 &820484409
 SpriteRenderer:
   m_ObjectHideFlags: 0

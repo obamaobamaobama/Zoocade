@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/bill asset/Assets/Scenes/Tower.unity
+- path: Assets/Scenes/Bill's Scenes/Frog Jump.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
