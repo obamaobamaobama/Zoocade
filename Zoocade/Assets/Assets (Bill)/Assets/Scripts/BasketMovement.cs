@@ -41,7 +41,7 @@ public class BasketMovement : MonoBehaviour
         }
         
     }
-    public void Update()
+    public void FixedUpdate()
     {
         transform.position += new Vector3(0,vsp);
 

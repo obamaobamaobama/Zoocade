@@ -9,8 +9,6 @@ public class FrogMovement : MonoBehaviour
     public bool grounded;
     public Transform player;
     public Rigidbody2D rb;
-    public float restTime;
-    public float setRestTime;
     [SerializeField]
     float velocity;
         public void zMoveLeft()
@@ -27,53 +25,32 @@ public class FrogMovement : MonoBehaviour
         if (Mathf.Round(transform.position.x) < 5)
         {
             transform.position = transform.position + new Vector3(speed * Time.deltaTime, 0);
-            
         }
        
         
     }
     public void Jump()
     {
-        if(restTime <= 0)
-        {
-            rb.AddForce(transform.up * jumpForce);
-            grounded = false;
-            restTime = setRestTime;
-        }
-        
+        rb.AddForce(transform.up * jumpForce);
+        grounded = false;
     }
     public void FixedUpdate()
     {
-        if(grounded && velocity == 0)
+        if(grounded && velocity == 0f)
         {
             Jump();
-            restTime -= Time.fixedDeltaTime;
-        }
-        else
-        {
-            restTime = setRestTime;
         }
         velocity = rb.velocity.y;
     }
-    void OnCollisionEnter2D(Collision2D col)
-  {
-      if (col.gameObject.tag == "player")
-      {
-          Physics2D.IgnoreCollision(player.GetComponent<Collider2D>(), GetComponent<Collider2D>());
-      }
-  }
    void OnTriggerEnter2D(Collider2D col)
    {
        if (col.gameObject.tag == "ground")
       {
-          restTime = setRestTime;
           grounded = true;
       }
    }
    void OnTriggerExit2D(Collider2D col)
    { 
-      
      grounded = false;
-     restTime = setRestTime;
    }
 }
