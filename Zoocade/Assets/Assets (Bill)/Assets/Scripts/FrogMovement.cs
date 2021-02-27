@@ -5,15 +5,11 @@ using UnityEngine;
 public class FrogMovement : MonoBehaviour
 {
     public float speed;
-    public float jumpForce;
-    public bool grounded;
-    public Transform player;
-    public Rigidbody2D rb;
+    
     [SerializeField]
-    float velocity;
         public void zMoveLeft()
     {
-        if(Mathf.Round(transform.position.x) > -5)
+        if(transform.position.x > -6)
         {
             transform.position = transform.position - new Vector3 ( speed * Time.deltaTime, 0);
         }
@@ -22,35 +18,24 @@ public class FrogMovement : MonoBehaviour
 
     public void zMoveRight()
     {
-        if (Mathf.Round(transform.position.x) < 5)
+        if (transform.position.x < 6)
         {
             transform.position = transform.position + new Vector3(speed * Time.deltaTime, 0);
         }
-       
-        
     }
-    public void Jump()
+    void FixedUpdate()
     {
-        rb.AddForce(transform.up * jumpForce);
-        grounded = false;
+        Teleport();
     }
-    public void FixedUpdate()
+    void Teleport()
     {
-        if(grounded && velocity == 0f)
+        if (transform.position.x > 5.5) //if at right border, go to left border
         {
-            Jump();
+            transform.position = new Vector3(-5.4f,transform.position.y,0);
         }
-        velocity = rb.velocity.y;
+        if (transform.position.x <-5.5) //if at left border, go to right border
+        {
+            transform.position = new Vector3(5.4f,transform.position.y,0);
+        }
     }
-   void OnTriggerEnter2D(Collider2D col)
-   {
-       if (col.gameObject.tag == "ground")
-      {
-          grounded = true;
-      }
-   }
-   void OnTriggerExit2D(Collider2D col)
-   { 
-     grounded = false;
-   }
 }

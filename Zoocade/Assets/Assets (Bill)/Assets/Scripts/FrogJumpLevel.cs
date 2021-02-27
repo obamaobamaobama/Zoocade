@@ -4,13 +4,22 @@ using UnityEngine;
 
 public class FrogJumpLevel : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public GameObject platformPrefab;
+    public int numberOfPlatforms;
+    public float levelWidth;
+    public float minY = 0.5f;
+    public float maxY = 3f;
+
     void Start()
     {
-        
+        Vector3 spawnPosition  = new Vector3();
+        for(int i = 0; i < numberOfPlatforms; i++)
+        {
+            spawnPosition.y += Random.Range(minY, maxY);
+            spawnPosition.x = Random.Range(-levelWidth, levelWidth);
+            Instantiate(platformPrefab, spawnPosition, Quaternion.identity);
+        }
     }
-
-    // Update is called once per frame
     void Update()
     {
         
