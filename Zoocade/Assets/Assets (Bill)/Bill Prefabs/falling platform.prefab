@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5177836629761871393}
   - component: {fileID: 5177836629761871398}
   - component: {fileID: -5525880640687593577}
+  - component: {fileID: 7147725494349623356}
   m_Layer: 0
   m_Name: falling platform
   m_TagString: ground
@@ -73,7 +74,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 1c06d87e9affd8a448f535fd28abfb8e, type: 3}
+  m_Sprite: {fileID: 95270856188524736, guid: d8ea8509a4fd4904981dcd081a14a1a7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -134,3 +135,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bouniciness: 20
+--- !u!95 &7147725494349623356
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5177836629761871399}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 7c0d7c52d14fd2e42ab3d1a97a0a77e2, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

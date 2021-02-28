@@ -5,8 +5,7 @@ using UnityEngine;
 public class FrogMovement : MonoBehaviour
 {
     public float speed;
-    
-    [SerializeField]
+    private Animator ani;
         public void zMoveLeft()
     {
         if(transform.position.x > -6)
@@ -23,6 +22,10 @@ public class FrogMovement : MonoBehaviour
             transform.position = transform.position + new Vector3(speed * Time.deltaTime, 0);
         }
     }
+    void Start()
+    {
+        ani = GetComponent<Animator>();
+    }
     void FixedUpdate()
     {
         Teleport();
@@ -37,5 +40,17 @@ public class FrogMovement : MonoBehaviour
         {
             transform.position = new Vector3(5.4f,transform.position.y,0);
         }
+    }
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.relativeVelocity.y >=0f) // checking if the platform collides is from the bottom
+        {
+            ani.SetBool("AnimatorGrounded",true);
+        }
+        
+    }
+    void OnCollisionExit2D()
+    {
+        ani.SetBool("AnimatorGrounded",false);
     }
 }
