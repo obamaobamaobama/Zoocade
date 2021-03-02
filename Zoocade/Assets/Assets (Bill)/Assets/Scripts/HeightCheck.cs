@@ -41,7 +41,7 @@ public class HeightCheck : MonoBehaviour
     }
     void Update()
     {
-        float localY = transform.position.y + 3.9f;
+        float localY = transform.position.y + 4f;
         heightDisplay.text = player1or2 + (Mathf.Round(localY * 10) /10);
     }
 
