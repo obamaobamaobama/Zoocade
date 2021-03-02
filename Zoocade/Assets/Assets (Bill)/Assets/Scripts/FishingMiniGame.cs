@@ -27,13 +27,13 @@ public class FishingMiniGame : MonoBehaviour
     [SerializeField] float hookPullVelocity;
     [SerializeField] float hookPullPower = 0.01f;
     [SerializeField] float hookGravityPower = 0.005f;
-    [SerializeField] float hookProgressDegradationPower = 0.1f;
+   // [SerializeField] float hookProgressDegradationPower = 0.1f;
 
     [SerializeField] Transform progressBarContainer;
 
     [SerializeField] SpriteRenderer hookSprite;
 
-    bool pause = false;
+   // bool pause = false;
     private void Start()
     {
         Resize();
@@ -83,7 +83,7 @@ public class FishingMiniGame : MonoBehaviour
 
     private void Win()
     {
-        pause = true;
+      //  pause = true;
         Debug.Log("P1 WIN");
     }
 
