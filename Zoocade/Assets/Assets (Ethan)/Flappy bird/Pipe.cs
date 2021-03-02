@@ -8,7 +8,7 @@ public class Pipe : MonoBehaviour
 
     private void Start()
     {
-        gameManager = GameObject.Find("microgameManager");
+        gameManager = GameObject.Find("microgameManagerFlappyBird");
         transform.position = new Vector2(this.transform.position.x, 0.16f * Random.Range(-5, 5));
     }
 

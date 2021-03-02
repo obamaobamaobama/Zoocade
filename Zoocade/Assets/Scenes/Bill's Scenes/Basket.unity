@@ -2169,5 +2169,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: destoyer
       objectReference: {fileID: 0}
+    - target: {fileID: 3486338191637980523, guid: 9c13f3de49a434b4aa3b2f183ab6add7,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9c13f3de49a434b4aa3b2f183ab6add7, type: 3}

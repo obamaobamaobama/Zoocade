@@ -17,7 +17,7 @@ public class PlayerDestroyed : MonoBehaviour
     {
          if (collision.gameObject.tag == tagignore)
       {
-          Physics2D.IgnoreCollision(player.GetComponent<Collider2D>(), GetComponent<Collider2D>());
+         Physics2D.IgnoreCollision(player.GetComponent<Collider2D>(), GetComponent<Collider2D>());
       }
       else
       {
