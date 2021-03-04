@@ -4,5 +4,14 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Ethan's Scenes/Splashscreen.unity
+    guid: 6e1e96b338297f843b2c48a6801742a5
+  - enabled: 1
+    path: Assets/Scenes/Ethan's Scenes/MainMenu.unity
+    guid: bf618447fbb8f4147b2654f52a5d28da
+  - enabled: 1
+    path: Assets/Scenes/Ethan's Scenes/Strength Test.unity
+    guid: 5425be2c0d64c1c4abc24e7747854f78
   m_configObjects: {}

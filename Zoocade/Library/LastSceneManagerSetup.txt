@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/Bill's Scenes/Dog Petting.unity
+- path: Assets/Scenes/Ethan's Scenes/Splashscreen.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 
 public class ControlManager : MonoBehaviour
 {
@@ -77,9 +78,16 @@ public class ControlManager : MonoBehaviour
         if (Input.GetKeyDown(Player2_B_button)) { P2B_pressed.Invoke(); }
         if (Input.GetKeyUp(Player2_B_button))   { P2B_released.Invoke(); }
 
-         if (Input.GetKey(Player2_A_button) && Input.GetKey(Player2_B_button)) { P2AB_held.Invoke(); }
+        if (Input.GetKey(Player2_A_button) && Input.GetKey(Player2_B_button)) { P2AB_held.Invoke(); }
         if (Input.GetKeyDown(Player2_A_button) && Input.GetKeyDown(Player2_B_button)) { P2AB_pressed.Invoke(); }
         if (Input.GetKeyUp(Player2_A_button) && Input.GetKeyUp(Player2_B_button)) { P2AB_released.Invoke(); }
 
-    }
+
+
+        // DEBUG (REMOVE BEFORE RELEASE)
+        if (Input.GetKeyDown("r"))
+		{
+            SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().name);
+		}
+	}
 }
