@@ -914,12 +914,12 @@ PrefabInstance:
     - target: {fileID: 4476858487976857542, guid: 4304ada3b3db7a0449dbbdc11dc0da75,
         type: 3}
       propertyPath: P1B_held.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: zDown
+      value: zUp
       objectReference: {fileID: 0}
     - target: {fileID: 4476858487976857542, guid: 4304ada3b3db7a0449dbbdc11dc0da75,
         type: 3}
       propertyPath: P2B_held.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: zDown
+      value: zUp
       objectReference: {fileID: 0}
     - target: {fileID: 4476858487976857542, guid: 4304ada3b3db7a0449dbbdc11dc0da75,
         type: 3}

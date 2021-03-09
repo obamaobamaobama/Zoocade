@@ -17,4 +17,18 @@ public class Monkeys : MonoBehaviour
 			monkeyHasHit = true;
 		}
 	}
+
+
+	public void zTimesUp()
+	{
+		if (GameObject.Find("ControlManager") != null)
+		{
+			GameObject.Find("ControlManager").GetComponent<ControlManager>().P1A_pressed.Invoke();
+		}
+
+		if (GameObject.Find("ControlManager") != null)
+		{
+			GameObject.Find("ControlManager").GetComponent<ControlManager>().P2A_pressed.Invoke();
+		}
+	}
 }
