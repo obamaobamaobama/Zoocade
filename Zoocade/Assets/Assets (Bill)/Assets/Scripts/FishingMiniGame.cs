@@ -32,11 +32,14 @@ public class FishingMiniGame : MonoBehaviour
     [SerializeField] Transform progressBarContainer;
 
     [SerializeField] SpriteRenderer hookSprite;
+    public string p1orp2;
+    public Animator oppositePlayerAnimator;
 
-   // bool pause = false;
+    static bool pause = false;
     private void Start()
     {
         Resize();
+        pause = false;
     }
 
     private void Resize() // resize the hook area, the calculation need this. also great for tuning.
@@ -51,7 +54,7 @@ public class FishingMiniGame : MonoBehaviour
 
     void FixedUpdate()
     {
-       // if (pause) { return; }
+       if (pause) { return; }
         HeartMovement();
         HookMovement();
         ProgressCheck();
@@ -83,8 +86,9 @@ public class FishingMiniGame : MonoBehaviour
 
     private void Win()
     {
-      //  pause = true;
-        Debug.Log("P1 WIN");
+       pause = true;
+        Debug.Log(p1orp2 + "WIN");
+        oppositePlayerAnimator.SetBool("Angry", true);
     }
 
     void HeartMovement()
