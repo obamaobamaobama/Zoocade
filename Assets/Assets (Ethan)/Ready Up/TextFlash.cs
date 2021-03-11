@@ -14,6 +14,7 @@ public class TextFlash : MonoBehaviour
 
     void Flash()
     {
+        // Make this animate a button press instead of flashing
         invisible = !invisible;
         this.GetComponent<Image>().enabled = invisible;
     }
