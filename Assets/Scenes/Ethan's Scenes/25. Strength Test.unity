@@ -772,15 +772,6 @@ MonoBehaviour:
   P2: {fileID: 1561186594}
   P1Score: 0
   P2Score: 0
-  P1Wins:
-    m_PersistentCalls:
-      m_Calls: []
-  P2Wins:
-    m_PersistentCalls:
-      m_Calls: []
-  P12Wins:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!1 &662777689
 GameObject:
   m_ObjectHideFlags: 0
@@ -1091,6 +1082,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TimeManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 3582324223605135113, guid: 768b05e24f7032e4792e29f053394b05,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3582324223605135114, guid: 768b05e24f7032e4792e29f053394b05,
         type: 3}

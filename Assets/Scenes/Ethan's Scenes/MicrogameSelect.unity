@@ -546,6 +546,37 @@ MonoBehaviour:
   - {fileID: 416499489986210053, guid: 6107aa3c7f8a9d044933ec73b5bbc4b0, type: 3}
   - {fileID: -6394104997065634705, guid: 6107aa3c7f8a9d044933ec73b5bbc4b0, type: 3}
   - {fileID: 6110623655477921393, guid: 6107aa3c7f8a9d044933ec73b5bbc4b0, type: 3}
+  microGames:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 102900000, guid: b4a82b96b36a90345a3e719acbe58f7a, type: 3}
+  - {fileID: 102900000, guid: c61686a3c01ef9d41902e611ba7c9113, type: 3}
+  - {fileID: 102900000, guid: 3a380330ab4f8f44c9de6bab46e348a1, type: 3}
+  - {fileID: 102900000, guid: cdf05bf1e8d5f004db13a96fe708afd2, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   randomSpeed: 0
   levelLoadedSound: {fileID: 8300000, guid: b40598d911e3e7246ad8f8e9bdd0e9f2, type: 3}
 --- !u!82 &1733311355

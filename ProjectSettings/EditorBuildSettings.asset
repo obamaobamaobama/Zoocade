@@ -18,9 +18,36 @@ EditorBuildSettings:
     path: Assets/Scenes/Ethan's Scenes/MicrogameSelect.unity
     guid: b293dad9899895940988253dbb3d3bf8
   - enabled: 1
-    path: Assets/Scenes/Ethan's Scenes/Strength Test.unity
+    path: Assets/Scenes/Ethan's Scenes/25. Strength Test.unity
     guid: 5425be2c0d64c1c4abc24e7747854f78
   - enabled: 1
-    path: Assets/Scenes/Ethan's Scenes/Flappy Bird.unity
+    path: Assets/Scenes/Ethan's Scenes/21. Flappy Bird.unity
     guid: c8943cbdedfb67244a2727b077edf6fc
+  - enabled: 1
+    path: Assets/Scenes/Bill's Scenes/Aesteroid.unity
+    guid: b4a82b96b36a90345a3e719acbe58f7a
+  - enabled: 1
+    path: Assets/Scenes/Bill's Scenes/Basket.unity
+    guid: c61686a3c01ef9d41902e611ba7c9113
+  - enabled: 1
+    path: Assets/Scenes/Bill's Scenes/CatInvader.unity
+    guid: 1997dc6de8efc1a42ac77fc03495d666
+  - enabled: 1
+    path: Assets/Scenes/Bill's Scenes/Dog Petting.unity
+    guid: 5ca52f31ced07064db83c7c0f2047667
+  - enabled: 1
+    path: Assets/Scenes/Bill's Scenes/Frog Jump.unity
+    guid: 99a830033ad62734290c427828032f9a
+  - enabled: 1
+    path: Assets/Scenes/Bill's Scenes/Snail.unity
+    guid: cdf05bf1e8d5f004db13a96fe708afd2
+  - enabled: 1
+    path: Assets/Scenes/Bill's Scenes/Tower.unity
+    guid: 3a380330ab4f8f44c9de6bab46e348a1
+  - enabled: 1
+    path: Assets/Scenes/Bill's Scenes/Trivia.unity
+    guid: 7b20a3690a403754b87d0744063a3252
+  - enabled: 1
+    path: Assets/Scenes/Ethan's Scenes/22. Reflex.unity
+    guid: b23330af69a9f9344adb19deaf84197b
   m_configObjects: {}
