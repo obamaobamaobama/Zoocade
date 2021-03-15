@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerDestroyed : MonoBehaviour
 {
@@ -23,6 +24,21 @@ public class PlayerDestroyed : MonoBehaviour
       {
         myCollider.enabled = false;
         animator.Play("Player explode"); //*E The behavior on the animator tab have the destory script (basically destroy gameobject after animation finished playing). here you can try to add a player lost method, but this script is also on enemyships
+        
+        var currentScene = SceneManager.GetActiveScene().name;
+        if(currentScene == "Aesteroid")
+        {
+          if(this.gameObject.name == "Player 1")
+          {
+            GameObject.Find("Aesteroid Manager").GetComponent<AesteroidManager>().CheckWhoWin(2);
+           
+          }
+          if(this.gameObject.name == "Player 2")
+          {
+            GameObject.Find("Aesteroid Manager").GetComponent<AesteroidManager>().CheckWhoWin(1);
+           
+          }
+        }
       }
       
        if (collision.gameObject.tag =="P1")
