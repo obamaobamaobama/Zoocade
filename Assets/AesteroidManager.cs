@@ -22,6 +22,9 @@ public class AesteroidManager : MonoBehaviour
         {
              TM.zP12Wins();
         }
+
+        // *Bill* *BUG*
+        // Need to handle when both players die at the same time
     }
     public void zTimesUp()
     {

@@ -9,13 +9,19 @@ public class Splashscreen : MonoBehaviour
 
 	private void Start()
 	{
-		if (mainMenu != null)
+		/*if (mainMenu != null)
 		{
-			SceneManager.LoadSceneAsync(mainMenu.name);
+			//SceneManager.LoadSceneAsync(mainMenu.name);
+			//SceneManager.LoadSceneAsync("MainMenu");
+			//SceneManager.LoadScene("MainMenu");
+			SceneManager.LoadScene(1);
 		}
 		else
 		{
 			Debug.LogWarning("ERROR!: No Main Menu scene in inspector?");
-		}
+		}*/
+
+		// Loads Main Menu
+		SceneManager.LoadScene(1);
 	}
 }

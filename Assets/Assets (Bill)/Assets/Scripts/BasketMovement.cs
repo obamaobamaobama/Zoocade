@@ -14,7 +14,7 @@ public class BasketMovement : MonoBehaviour
     public Transform player;
         public void zMoveLeft()
     {
-        if(Mathf.Round(transform.position.x) > -5)
+        if(Mathf.Round(transform.position.x) > -4)
         {
             transform.position = transform.position - new Vector3 ( speed * Time.deltaTime, 0);
         }
@@ -23,7 +23,7 @@ public class BasketMovement : MonoBehaviour
 
     public void zMoveRight()
     {
-        if (Mathf.Round(transform.position.x) < 5)
+        if (Mathf.Round(transform.position.x) < 4)
         {
             transform.position = transform.position + new Vector3(speed * Time.deltaTime, 0);
             

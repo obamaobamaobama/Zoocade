@@ -13,6 +13,8 @@ public class ShipMovement : MonoBehaviour
     public float coolDown;
     public GameObject bullet;
     public GameObject bulletClone;
+    // Ethan wrote this
+    private float boundaryLimit = 4.3f;
 
     void start()
     {
@@ -53,16 +55,16 @@ public class ShipMovement : MonoBehaviour
         
        transform.position = transform.position + new Vector3(0, transform.position.y, 0);
         
-       if(transform.position.x >= -5 && transform.position.x <=5)
+       if(transform.position.x >= -boundaryLimit && transform.position.x <= boundaryLimit)
             {
                 transform.position = transform.position - new Vector3 ( speed * Time.deltaTime, 0);
             }
 
-        if(transform.position.x < -5)
+        if(transform.position.x < -boundaryLimit)
         {
             transform.position = transform.position - new Vector3 ( -0.01f, 0);
         }
-        if(transform.position.x > 5)
+        if(transform.position.x > boundaryLimit)
         {
             transform.position = transform.position - new Vector3 ( 0.01f, 0);
         }
@@ -79,13 +81,13 @@ public class ShipMovement : MonoBehaviour
     
     public void zMoveLeft()
     {
-        if(transform.position.x > -5)
+        if(transform.position.x > -boundaryLimit)
         transform.position = transform.position - new Vector3 ( speed * Time.deltaTime, 0);
     }
 
     public void zMoveRight()
     {
-        if (transform.position.x < 5)
+        if (transform.position.x < boundaryLimit)
             transform.position = transform.position + new Vector3(speed * Time.deltaTime, 0);
     }
     public void zShootBullets()

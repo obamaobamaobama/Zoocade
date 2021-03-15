@@ -99,18 +99,20 @@ public class TimeManager : MonoBehaviour
 
 		if (playersOrientation == 1)
 		{
-			tmp1.transform.position = new Vector2(128, 128);
-			tmp1tick.transform.position = new Vector2(128, 192);
-			tmp2.transform.position = new Vector2(128, 0);
-			tmp2tick.transform.position = new Vector2(128, 64);
+			tmp1.GetComponent<RectTransform>().localPosition = new Vector2(0, 0);
+			tmp1tick.GetComponent<RectTransform>().localPosition = new Vector2(0, 64);
+
+			tmp2.GetComponent<RectTransform>().localPosition = new Vector2(0, -128);
+			tmp2tick.GetComponent<RectTransform>().localPosition = new Vector2(0, -64);
 		}
 
 		if (playersOrientation == 2)
 		{
-			tmp1.transform.position = new Vector2(64, 64);
-			tmp1tick.transform.position = new Vector2(64, 128);
-			tmp2.transform.position = new Vector2(192, 64);
-			tmp2tick.transform.position = new Vector2(192, 128);
+			tmp1.GetComponent<RectTransform>().localPosition = new Vector2(-64, -64);
+			tmp1tick.GetComponent<RectTransform>().localPosition = new Vector2(-64, 0);
+
+			tmp2.GetComponent<RectTransform>().localPosition = new Vector2(64, -64);
+			tmp2tick.GetComponent<RectTransform>().localPosition = new Vector2(64, 0);
 		}
 	}
 
@@ -195,7 +197,8 @@ public class TimeManager : MonoBehaviour
 		if (player1done && player2done)
 		{
 			TimesUp.Invoke();
-			CancelInvoke("TimerCountdown");		}
+			CancelInvoke("TimerCountdown");
+		}
 	}
 
 	private void GiveWinnerLoserIcons()
@@ -240,17 +243,25 @@ public class TimeManager : MonoBehaviour
 		audioo.clip = levelLoadReverse;
 		audioo.Play();
 		InvokeRepeating("Fade", 0.008f, 0.008f);
-		Invoke("ReloadToMenu", 1f);
+		Invoke("ReloadToMenu", 1.5f);
 	}
 
 	private void Fade()
 	{
-		fadeOut.GetComponent<RectTransform>().localScale += new Vector3(0.01f, 0.01f);
+		if (fadeOut.GetComponent<RectTransform>().localScale.x < 1)
+		{
+			fadeOut.GetComponent<RectTransform>().localScale += new Vector3(0.01f, 0.01f);
+		}
+		else
+		{
+			ReloadToMenu();
+		}
 	}
 
 	private void ReloadToMenu()
 	{
-		SceneManager.LoadSceneAsync("MainMenu");
+		// Load MainMenu
+		SceneManager.LoadScene(1);
 	}
 
 

@@ -6,9 +6,13 @@ public class FrogMovement : MonoBehaviour
 {
     public float speed;
     private Animator ani;
+
+    // Ethan wrote this
+    private float boundaryLimit = 4.5f;
+
         public void zMoveLeft()
     {
-        if(transform.position.x > -6)
+        if(transform.position.x > -boundaryLimit)
         {
             transform.position = transform.position - new Vector3 ( speed * Time.deltaTime, 0);
         }
@@ -17,7 +21,7 @@ public class FrogMovement : MonoBehaviour
 
     public void zMoveRight()
     {
-        if (transform.position.x < 6)
+        if (transform.position.x < boundaryLimit)
         {
             transform.position = transform.position + new Vector3(speed * Time.deltaTime, 0);
         }
@@ -32,13 +36,13 @@ public class FrogMovement : MonoBehaviour
     }
     void Teleport()
     {
-        if (transform.position.x > 5.5) //if at right border, go to left border
+        if (transform.position.x > (boundaryLimit+0.5f)) //if at right border, go to left border
         {
-            transform.position = new Vector3(-5.4f,transform.position.y,0);
+            transform.position = new Vector3((boundaryLimit-0.4f),transform.position.y,0);
         }
-        if (transform.position.x <-5.5) //if at left border, go to right border
+        if (transform.position.x < -(boundaryLimit+0.5f)) //if at left border, go to right border
         {
-            transform.position = new Vector3(5.4f,transform.position.y,0);
+            transform.position = new Vector3((boundaryLimit-0.4f),transform.position.y,0);
         }
     }
     void OnCollisionEnter2D(Collision2D collision)

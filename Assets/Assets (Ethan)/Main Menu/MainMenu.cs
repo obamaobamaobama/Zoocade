@@ -9,13 +9,16 @@ public class MainMenu : MonoBehaviour
 
     public void zTwoPlayer()
     {
-        if (testScene != null)
+        /*if (testScene != null)
         {
-            SceneManager.LoadSceneAsync(testScene.name);
+            //SceneManager.LoadSceneAsync(testScene.name);
         }
         else
         {
             Debug.LogWarning("ERROR!: No Test scene in inspector?");
-        }
+        }*/
+
+        // Load Microgame Select
+        SceneManager.LoadScene(3);
     }
 }

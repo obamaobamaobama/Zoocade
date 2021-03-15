@@ -10,25 +10,25 @@ public class GamemodeSelect : MonoBehaviour
 
     public void zFreeplay()
     {
-        if (freeplay != null)
+        /*if (freeplay != null)
         {
-            SceneManager.LoadSceneAsync(freeplay.name);
+            //SceneManager.LoadSceneAsync(freeplay.name);
         }
         else
         {
             Debug.LogWarning("ERROR!: No freeplay scene in inspector?");
-        }
+        }*/
     }
 
     public void zNormal()
     {
-        if (normal != null)
+        /*if (normal != null)
         {
-            SceneManager.LoadSceneAsync(normal.name);
+            //SceneManager.LoadSceneAsync(normal.name);
         }
         else
         {
             Debug.LogWarning("ERROR!: No normal scene in inspector?");
-        }
+        }*/
     }
 }

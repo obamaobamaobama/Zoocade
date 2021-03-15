@@ -229,6 +229,7 @@ MonoBehaviour:
   loseGame: {fileID: 8300000, guid: e9ee40cf73110c24cb8651479e09efd8, type: 3}
   microPoints: 0
   alive: 1
+  vsp: 0
   myScore: 0
 --- !u!61 &120708
 BoxCollider2D:
@@ -500,6 +501,7 @@ MonoBehaviour:
   loseGame: {fileID: 8300000, guid: e9ee40cf73110c24cb8651479e09efd8, type: 3}
   microPoints: 0
   alive: 1
+  vsp: 0
   myScore: 0
 --- !u!61 &330108721
 BoxCollider2D:
@@ -829,7 +831,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
