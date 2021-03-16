@@ -12,6 +12,7 @@ public class FishingMiniGame : MonoBehaviour
 
     float heartPosition;
     float heartDestination;
+    float designedScreenheight = 512f;
 
     float heartTimer;
     [SerializeField] float timerMultiplicator = 3f;
@@ -25,8 +26,8 @@ public class FishingMiniGame : MonoBehaviour
     [SerializeField] float hookPower = 0.5f;
     float hookProgress;
     [SerializeField] float hookPullVelocity;
-    [SerializeField] float hookPullPower = 0.01f;
-    [SerializeField] float hookGravityPower = 0.005f;
+    [SerializeField] float hookPullPower = 0.04f;
+    [SerializeField] float hookGravityPower = 0.02f;
    // [SerializeField] float hookProgressDegradationPower = 0.1f;
 
     [SerializeField] Transform progressBarContainer;
@@ -40,6 +41,14 @@ public class FishingMiniGame : MonoBehaviour
     {
         Resize();
         pause = false;
+    }
+
+    private float ScreenSizeMod
+    {
+        get
+        {
+            return designedScreenheight / Screen.height;
+        }
     }
 
     private void Resize() // resize the hook area, the calculation need this. also great for tuning.
@@ -65,13 +74,13 @@ public class FishingMiniGame : MonoBehaviour
         Vector3 scale = progressBarContainer.localScale;
         scale.y = hookProgress;
         progressBarContainer.localScale = scale;
-
+  
         float min = hookPosition - hookSize / 2;
         float max = hookPosition + hookSize / 2;
 
         if(min < heartPosition && heartPosition < max) // gain progress
         {
-            hookProgress += hookPower * Time.fixedDeltaTime;
+            hookProgress += hookPower * Time.deltaTime;
         }
         else //lose progress
         {
@@ -93,7 +102,7 @@ public class FishingMiniGame : MonoBehaviour
 
     void HeartMovement()
     {
-        heartTimer -= Time.fixedDeltaTime;
+        heartTimer -= Time.deltaTime;
         if (heartTimer < 0)
         {
             heartTimer = UnityEngine.Random.value * timerMultiplicator;
@@ -107,13 +116,14 @@ public class FishingMiniGame : MonoBehaviour
     {
         if(hookPosition - hookSize / 2 <= 0f && hookPullVelocity<0f)
         {
+            
             hookPullVelocity = 0f;
         }
         if(hookPosition + hookSize / 2 >= 0.999f && hookPullVelocity > 0f)
         {
             hookPullVelocity = 0f;
         }
-        hookPullVelocity -= hookGravityPower * Time.fixedDeltaTime;
+        hookPullVelocity -= (hookGravityPower * ScreenSizeMod) * Time.deltaTime;
         hookPosition += hookPullVelocity;
         hookPosition = Mathf.Clamp(hookPosition, hookSize / 2, 1 - hookSize/2);
         hook.position = Vector3.Lerp(bottomPivot.position, topPivot.position, hookPosition);
@@ -122,6 +132,7 @@ public class FishingMiniGame : MonoBehaviour
     }
     public void zHooking()
     {
-        hookPullVelocity += hookPullPower * Time.fixedDeltaTime;
+        Debug.Log(ScreenSizeMod);
+        hookPullVelocity += (hookPullPower * ScreenSizeMod) * Time.deltaTime;
     }
 }

@@ -9,12 +9,14 @@ public class BasketMovement : MonoBehaviour
     public float vsp;
     public float jumpForce;
     public bool grounded;
+    // Ethan wrote this
+    public float boundaryLimit = 4;
     
     
     public Transform player;
         public void zMoveLeft()
     {
-        if(Mathf.Round(transform.position.x) > -4)
+        if(Mathf.Round(transform.position.x) > -boundaryLimit)
         {
             transform.position = transform.position - new Vector3 ( speed * Time.deltaTime, 0);
         }
@@ -23,7 +25,7 @@ public class BasketMovement : MonoBehaviour
 
     public void zMoveRight()
     {
-        if (Mathf.Round(transform.position.x) < 4)
+        if (Mathf.Round(transform.position.x) < boundaryLimit)
         {
             transform.position = transform.position + new Vector3(speed * Time.deltaTime, 0);
             
