@@ -14,19 +14,16 @@ public class Enemyship : MonoBehaviour
 
     void Start()
     { 
-        enemyShipSpeed = 1.5f;
+        enemyShipSpeed = 1f;
         readyToShoot = false; 
         coolDown = fireRate;
-        InvokeRepeating("MoveEnemy",Time.captureDeltaTime, Time.deltaTime);
+        InvokeRepeating("MoveEnemy",Time.captureDeltaTime, Time.fixedDeltaTime);
        // Debug.Log(parent.childCount);
         
     }
 
-    // Update is called once per frame
     void FixedUpdate()
     { 
-       // InUpdate();
-      //  SwitchDirection();
         if (readyToShoot == false)
         {
             coolDown -= 1f *Time.deltaTime;
@@ -49,7 +46,7 @@ public class Enemyship : MonoBehaviour
 
         foreach(Transform enemy in parent)
         {
-            if(enemy.position.x < -4.5f || enemy.position.x > 4.5f)
+            if(enemy.position.x < -5f || enemy.position.x > 5f)
             {
               enemyShipSpeed = -enemyShipSpeed;  
               return;

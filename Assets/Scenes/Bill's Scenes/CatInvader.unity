@@ -2076,6 +2076,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: TimeManager
       objectReference: {fileID: 0}
+    - target: {fileID: 3582324223605135113, guid: 768b05e24f7032e4792e29f053394b05,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3582324223605135114, guid: 768b05e24f7032e4792e29f053394b05,
+        type: 3}
+      propertyPath: timer
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 3582324223605135114, guid: 768b05e24f7032e4792e29f053394b05,
         type: 3}
       propertyPath: playersOrientation
@@ -2482,6 +2492,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: _P2_WL_
+      objectReference: {fileID: 0}
+    - target: {fileID: 8953435163613441028, guid: a3912c234fda4fe439d86b1a79e0da6b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8953435163613441031, guid: a3912c234fda4fe439d86b1a79e0da6b,
         type: 3}

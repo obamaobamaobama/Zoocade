@@ -7,7 +7,6 @@ public class HeightCheck : MonoBehaviour
 {
     public Text heightDisplay;
     public Vector2 raycastDirection;
-    public float timer;
     public float speed;
     public string player1or2;
     public float upCheckDistance = 0.5f;
@@ -33,10 +32,6 @@ public class HeightCheck : MonoBehaviour
         if(transform.position.y < -4)
         {
             transform.position = transform.position + new Vector3(0,0.1f * Time.deltaTime);
-        }
-        if(transform.position.y >=3 && timer <= 0)
-        {
-            Debug.Log("you win");
         }
     }
     void Update()

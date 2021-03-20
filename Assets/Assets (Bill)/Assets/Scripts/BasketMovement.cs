@@ -49,7 +49,7 @@ public class BasketMovement : MonoBehaviour
 
         if(transform.position.y >-3.5f)
         {
-            vsp-=gravity * Time.fixedDeltaTime;
+            vsp-=gravity * Time.deltaTime;
         }
         else
         {
