@@ -14,7 +14,7 @@ public class ShipMovement : MonoBehaviour
     public GameObject bullet;
     public GameObject bulletClone;
     // Ethan wrote this
-    private float boundaryLimit = 4.3f;
+    public float boundaryLimit = 5f;
 
     void start()
     {
@@ -57,16 +57,16 @@ public class ShipMovement : MonoBehaviour
         
        if(transform.position.x >= -boundaryLimit && transform.position.x <= boundaryLimit)
             {
-                transform.position = transform.position - new Vector3 ( speed * Time.deltaTime, 0);
+                transform.position = transform.position - new Vector3 (speed * Time.deltaTime, 0);
             }
 
         if(transform.position.x < -boundaryLimit)
         {
-            transform.position = transform.position - new Vector3 ( -0.01f, 0);
+            transform.position = transform.position + new Vector3 (0.01f,0,0);
         }
         if(transform.position.x > boundaryLimit)
         {
-            transform.position = transform.position - new Vector3 ( 0.01f, 0);
+            transform.position = transform.position - new Vector3 (0.01f ,0,0);
         }
     }
     public void zRotateLeft(float PlayerAngle)
