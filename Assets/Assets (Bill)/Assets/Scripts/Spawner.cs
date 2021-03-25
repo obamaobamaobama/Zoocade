@@ -9,7 +9,7 @@ public class Spawner : MonoBehaviour
     private float timeBtwSpawns;
     public float startTimeBtwSpawns;
     public float setTime = 0.6f;
-
+    public float setTimeMax = 2;
     void Start()
     {
         // resets time to a value from the inspector
@@ -21,10 +21,11 @@ public class Spawner : MonoBehaviour
         // when timer run to 0 spawn enemy in a random spawnSpots. when there is still time, -= Time.deltatime. After spawning, the timer resets to 2
         if (timeBtwSpawns <= 0)
         {
+            float setTimeRange = Random.Range(setTime, setTime + setTimeMax);
             int randPos = Random.Range(0, spawnSpots.Length);
             int randEn = Random.Range(0, enemy.Length);
             Instantiate(enemy[randEn], spawnSpots[randPos].position, Quaternion.identity);
-            timeBtwSpawns = setTime;
+            timeBtwSpawns = setTimeRange;
         }
         else
         {
