@@ -5,6 +5,7 @@ using UnityEngine;
 public class GroundEnemy : MonoBehaviour
 {
     public float speed;
+      public bool destroyed = false;
 
     // Start is called before the first frame update
     void Start()
@@ -15,7 +16,10 @@ public class GroundEnemy : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        transform.position = Vector2.MoveTowards(transform.position, new Vector3(0,transform.position.y,0), speed * Time.deltaTime);
+        if(destroyed == false)
+        {
+            transform.position = Vector2.MoveTowards(transform.position, new Vector3(0,transform.position.y,0), speed * Time.deltaTime);
+        }
     }
     void Update()
     {
@@ -23,5 +27,9 @@ public class GroundEnemy : MonoBehaviour
        {
            Destroy(gameObject);
        }
+    }
+     public void SetDestroyed()
+    {
+        destroyed = true;
     }
 }

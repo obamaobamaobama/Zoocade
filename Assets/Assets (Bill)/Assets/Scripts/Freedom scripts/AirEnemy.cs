@@ -6,6 +6,9 @@ public class AirEnemy : MonoBehaviour
 {
     public float speed;
     public bool goRight;
+    public GameObject bomb;
+    public bool dropped = false;
+    public bool destroyed = false;
     void Awake()
     {
         if(transform.position.x < 0)
@@ -19,13 +22,25 @@ public class AirEnemy : MonoBehaviour
     }
     void FixedUpdate()
     {
-        if(goRight)
+        if (destroyed == false)
         {
+            if(goRight)
+            {
             transform.position = transform.position + new Vector3(speed * Time.deltaTime, 0, 0);
-        }
-        else
-        {
+            }
+            else
+            {
             transform.position = transform.position + new Vector3(-speed * Time.deltaTime, 0, 0);
+             }
+
+            if(transform.position.x <= 0.2&& transform.position.x >=-0.2)
+            {
+                if(dropped == false)
+                {
+                    Instantiate(bomb, new Vector3(transform.position.x, transform.position.y - 0.5f, 0), transform.rotation);
+                    dropped = true;
+                }
+            }
         }
     }  
     void Update()
@@ -34,5 +49,9 @@ public class AirEnemy : MonoBehaviour
         {
             Destroy(gameObject);
         }
+    }
+    public void SetDestroyed()
+    {
+        destroyed = true;
     }
 }
