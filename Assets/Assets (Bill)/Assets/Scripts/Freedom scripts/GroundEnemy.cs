@@ -5,12 +5,20 @@ using UnityEngine;
 public class GroundEnemy : MonoBehaviour
 {
     public float speed;
-      public bool destroyed = false;
+    public bool destroyed = false;
+    public SpriteRenderer body;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        if(transform.position.x < 0)
+        {
+            body.flipX = false;
+        }
+        if(transform.position.x > 0)
+        {
+            body.flipX = true;
+        }
     }
 
     // Update is called once per frame

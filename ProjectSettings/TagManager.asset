@@ -10,6 +10,7 @@ TagManager:
   - P1
   - P2
   - ground
+  - Bomb
   layers:
   - Default
   - TransparentFX
