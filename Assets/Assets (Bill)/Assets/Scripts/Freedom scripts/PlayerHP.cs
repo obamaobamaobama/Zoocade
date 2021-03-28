@@ -13,6 +13,10 @@ public class PlayerHP : MonoBehaviour
            hp--;
            Destroy(other.gameObject);
        }
+       if(other.gameObject.tag == "Bomb")
+       {
+           hp--;
+       }
    }
    void Update()
    {

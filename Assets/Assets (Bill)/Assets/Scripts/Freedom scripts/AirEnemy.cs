@@ -9,15 +9,18 @@ public class AirEnemy : MonoBehaviour
     public GameObject bomb;
     public bool dropped = false;
     public bool destroyed = false;
+    public SpriteRenderer body;
     void Awake()
     {
         if(transform.position.x < 0)
         {
             goRight = true;
+            body.flipX = true;
         }
         else
         {
             goRight = false;
+            body.flipX = false;
         }
     }
     void FixedUpdate()
