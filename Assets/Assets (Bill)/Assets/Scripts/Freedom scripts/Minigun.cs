@@ -20,6 +20,14 @@ public class Minigun : MonoBehaviour
     public float fireRate = 0.1f;
     public float coolDown= 0.1f;
     
+    public Transform muzzlePosR;
+    public Transform shellLaunchR;
+    public Transform muzzlePosL;
+    public Transform shellLaunchL;
+    public SpriteRenderer body;
+    public SpriteRenderer feet;
+    private bool flipped = false;
+    public Animator ani;
     public void FixedUpdate()
     {
       if (readyToShoot == false)
@@ -35,6 +43,25 @@ public class Minigun : MonoBehaviour
     angle = Mathf.Clamp(angle, min, max);
     gun.transform.eulerAngles = new Vector3(0, 0, angle);
     }
+    public void Update()
+    {
+      if(transform.rotation.z < 0)
+      {
+        body.flipX = false;
+        feet.flipX = false;
+         body.flipY = false;
+        feet.flipY = false;
+        flipped = false;
+      }
+      if(transform.rotation.z > 0)
+      {
+       
+        feet.flipX = true;
+        body.flipY = true;
+        flipped = true;
+        
+      }
+    }
     
     public void zRotLeft()
     {
@@ -48,10 +75,20 @@ public class Minigun : MonoBehaviour
     {
       if(readyToShoot)
       {
-        shellClone = Instantiate(shell, new Vector3(transform.position.x,(transform.position.y)), transform.localRotation) as GameObject;
-        bulletClone = Instantiate(bullet, new Vector3(transform.position.x,(transform.position.y)), transform.localRotation) as GameObject;
-        readyToShoot = false;
-        Debug.Log("shooting");
+        if(!flipped)
+        {
+          shellClone = Instantiate(shell, new Vector3(shellLaunchR.position.x,(shellLaunchR.position.y)), transform.localRotation) as GameObject;
+          bulletClone = Instantiate(bullet, new Vector3(muzzlePosR.position.x,(muzzlePosR.position.y)), transform.localRotation) as GameObject;
+          readyToShoot = false;
+          ani.Play("Gun fire");
+        }
+        else //flipped, different locations for muzzle
+        {
+          shellClone = Instantiate(shell, new Vector3(shellLaunchL.position.x,(shellLaunchL.position.y)), transform.localRotation) as GameObject;
+          bulletClone = Instantiate(bullet, new Vector3(muzzlePosL.position.x,(muzzlePosL.position.y)), transform.localRotation) as GameObject;
+          readyToShoot = false;
+          ani.Play("Gun fire");
+        }
       }
       
     }
