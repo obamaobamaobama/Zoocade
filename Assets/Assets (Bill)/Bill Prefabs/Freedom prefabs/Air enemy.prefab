@@ -141,6 +141,7 @@ MonoBehaviour:
   ani: {fileID: 1053642027300517928}
   enemy: {fileID: 1647081069299750024}
   col: {fileID: 8023798707675371705}
+  rb: {fileID: 615556934284521985}
 --- !u!95 &1053642027300517928
 Animator:
   serializedVersion: 3

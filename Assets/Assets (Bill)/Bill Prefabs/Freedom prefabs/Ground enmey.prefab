@@ -117,6 +117,7 @@ MonoBehaviour:
   ani: {fileID: 2216223395090905747}
   enemy: {fileID: 9121547752474538244}
   col: {fileID: 7349212426354391045}
+  rb: {fileID: 3305875938734708323}
 --- !u!50 &3305875938734708323
 Rigidbody2D:
   serializedVersion: 4
