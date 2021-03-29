@@ -72,15 +72,26 @@ public static bool pause = false;
    }
    void CheckWhoWin()
    {
-     if(pointer1.position.x == correctAnswer.transform.position.x ||pause && pointer2.position.x != correctAnswer.transform.position.x)
+     if(pointer1.position.x == correctAnswer.transform.position.x && pointer2.position.x != correctAnswer.transform.position.x)
      {
         Debug.Log("P1 win");
         pause = true;
      }
-     if(pointer2.position.x == correctAnswer.transform.position.x||pause && pointer1.position.x != correctAnswer.transform.position.x)
+     if(pointer2.position.x == correctAnswer.transform.position.x && pointer1.position.x != correctAnswer.transform.position.x)
      {
         Debug.Log("P2 win");
         pause = true;
+     }
+     if(pause)
+     {
+        if(pointer1.position.x == 0 && pointer2.position.x != correctAnswer.transform.position.x)
+        {
+           Debug.Log("P1 win");
+        }
+        if(pointer2.position.x == 0 && pointer1.position.x != correctAnswer.transform.position.x)
+        {
+           Debug.Log("P2 win");
+        }
      }
    }
 }

@@ -1564,6 +1564,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: _P2_WL_
       objectReference: {fileID: 0}
+    - target: {fileID: 8953435163613441028, guid: a3912c234fda4fe439d86b1a79e0da6b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8953435163613441031, guid: a3912c234fda4fe439d86b1a79e0da6b,
         type: 3}
       propertyPath: m_RootOrder
@@ -1845,6 +1850,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: _P1_WL_
+      objectReference: {fileID: 0}
+    - target: {fileID: 8953435163613441028, guid: 74bbe16a3070b634f94c2f6f0ad87469,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8953435163613441031, guid: 74bbe16a3070b634f94c2f6f0ad87469,
         type: 3}
