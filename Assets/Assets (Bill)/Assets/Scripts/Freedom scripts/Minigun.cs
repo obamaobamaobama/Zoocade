@@ -28,6 +28,7 @@ public class Minigun : MonoBehaviour
     public SpriteRenderer feet;
     private bool flipped = false;
     public Animator ani;
+
     public void FixedUpdate()
     {
       if (readyToShoot == false)
@@ -39,9 +40,9 @@ public class Minigun : MonoBehaviour
             coolDown = fireRate;
             readyToShoot = true;
         }
-   
-    angle = Mathf.Clamp(angle, min, max);
-    gun.transform.eulerAngles = new Vector3(0, 0, angle);
+
+        angle = Mathf.Clamp(angle, min, max);
+        gun.transform.eulerAngles = new Vector3(0, 0, angle);
     }
     public void Update()
     {

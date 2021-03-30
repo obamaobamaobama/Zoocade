@@ -35,19 +35,19 @@ public static bool pause = false;
    void GetRandomQuestion()
    {
       int randQ = Random.Range(0, allQuestion.Count); 
-      currentQuestion = allQuestion[randQ];
+      currentQuestion = allQuestion[randQ]; //set current question from the list of question thats randomly picked
 
       audioSource.clip = currentQuestion.question; // set the clip to the question which is an audio file
       audioSource.Play();
       
-      int currentAnswer = randQ;
+      int currentAnswer = randQ; // current answer is interger that is the same number as the randQ, ranQ = current question
 
       int randPos = Random.Range(0, allSpawnPos.Count);
-       correctAnswer = Instantiate(allChoices[currentAnswer].choices, allSpawnPos[randPos].position, transform.rotation); // instantiate answer
+       correctAnswer = Instantiate(allChoices[currentAnswer].choices, allSpawnPos[randPos].position, transform.rotation); // instantiate correct answer
 
-      allChoices.RemoveAt(currentAnswer); // = get the wrong choices
-      allSpawnPos.RemoveAt(randPos); //get the other spawn pos
-      Instantiate(allChoices[Random.Range(0,allChoices.Count)].choices, allSpawnPos[Random.Range(0,allSpawnPos.Count)].position, transform.rotation); // instantiate other choices
+      allChoices.RemoveAt(currentAnswer); // = get the wrong choices by removing current answer from the list of possible answers
+      allSpawnPos.RemoveAt(randPos); //get the other spawn pos by removing the position from the list of list of positions
+      Instantiate(allChoices[Random.Range(0,allChoices.Count)].choices, allSpawnPos[Random.Range(0,allSpawnPos.Count)].position, transform.rotation); // instantiate other wrong answer
 
    }
    void FixedUpdate()

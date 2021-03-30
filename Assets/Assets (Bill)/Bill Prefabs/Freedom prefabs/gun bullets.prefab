@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1692698483346620772}
   - component: {fileID: 6891054987563079356}
   m_Layer: 0
-  m_Name: p2 mini
+  m_Name: gun bullets
   m_TagString: minus
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

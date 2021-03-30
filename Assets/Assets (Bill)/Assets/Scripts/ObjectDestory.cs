@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class ObjectDestory : MonoBehaviour
 {
+    public bool ableToDestroyEnemies;
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.tag=="plus")
@@ -15,5 +16,9 @@ public class ObjectDestory : MonoBehaviour
             Destroy(collision.gameObject);
         }
         
+        if (ableToDestroyEnemies && collision.tag =="Enemy")
+        {
+            Destroy(collision.gameObject);
+        }
     }
 }
