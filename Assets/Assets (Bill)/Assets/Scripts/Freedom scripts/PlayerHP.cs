@@ -7,8 +7,14 @@ public class PlayerHP : MonoBehaviour
     public bool destroyEnmeyOnTrigger = true;
    public int hp = 5;
    public SpriteRenderer[] hearts;
+   private Rigidbody2D rb;
     public Animator ani;
    public bool explosive;
+
+   void Start()
+   {
+       rb = GetComponent<Rigidbody2D>();
+   }
    void OnTriggerEnter2D(Collider2D other)
    {
        if(other.gameObject.tag == "Enemy")
@@ -43,9 +49,10 @@ public class PlayerHP : MonoBehaviour
    {
        if(hp<= 0 && explosive)
        {
+           Destroy(rb);
            ani.Play("Player explode");
        }
-       if(hp<= 0)
+       if(hp<= 0 && !explosive)
        {
            Destroy(gameObject);
        }
