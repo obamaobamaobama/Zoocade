@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerHP : MonoBehaviour
 {
+    public bool destroyEnmeyOnTrigger = true;
    public int hp = 5;
    public SpriteRenderer[] hearts;
    void OnTriggerEnter2D(Collider2D other)
@@ -11,7 +12,11 @@ public class PlayerHP : MonoBehaviour
        if(other.gameObject.tag == "Enemy")
        {
            hp--;
-           Destroy(other.gameObject);
+           if(destroyEnmeyOnTrigger)
+           {
+            Destroy(other.gameObject);
+           }
+          
        }
        if(other.gameObject.tag == "Bomb")
        {
