@@ -1276,6 +1276,8 @@ MonoBehaviour:
   - {fileID: 396022573}
   - {fileID: 1922303161}
   - {fileID: 100230244}
+  ani: {fileID: 880207253}
+  explosive: 0
 --- !u!61 &880207250
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1847,6 +1849,8 @@ MonoBehaviour:
   - {fileID: 527759350}
   - {fileID: 1772671868}
   - {fileID: 830252336}
+  ani: {fileID: 1685900667}
+  explosive: 0
 --- !u!50 &1685900672
 Rigidbody2D:
   serializedVersion: 4
@@ -2270,6 +2274,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 945171442373680715, guid: 9436752dbd6cfa642887d68f7caac16e,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1797669547657109500, guid: 9436752dbd6cfa642887d68f7caac16e,
         type: 3}
       propertyPath: m_Name
@@ -2348,6 +2357,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2495189325681662036, guid: 506f28d6f17ae2243957eb6de3f615b2,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 5494306467894246594, guid: 506f28d6f17ae2243957eb6de3f615b2,
         type: 3}
