@@ -50,4 +50,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Ethan's Scenes/22. Reflex.unity
     guid: b23330af69a9f9344adb19deaf84197b
+  - enabled: 1
+    path: Assets/Scenes/Bill's Scenes/Freedom.unity
+    guid: 4588297ddb8014a41a4bb232366e60a4
+  - enabled: 1
+    path: Assets/Scenes/Bill's Scenes/Jetpack.unity
+    guid: 893ae838cce3b09408c7e768f392a84d
+  - enabled: 1
+    path: Assets/Scenes/Bill's Scenes/Jetpack2.unity
+    guid: c08740da6da9bb44781a7b06e0eb5ab1
+  - enabled: 1
+    path: Assets/Scenes/Bill's Scenes/Monkey dodge.unity
+    guid: d7ffd845b7618d646943596c968f70d0
   m_configObjects: {}
