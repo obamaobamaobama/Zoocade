@@ -34,13 +34,28 @@ public class DanceBattlePlayers : MonoBehaviour
 	}
 
 
+	public void Won()
+	{
+		_anim.SetTrigger("Win");
+	}
+
+	public void Lost()
+	{
+		_anim.SetTrigger("Fail");
+	}
+
+
 	private void OnTriggerEnter2D(Collider2D collision)
 	{
 		touchingDanceBlock = true;
-		var db = collision.gameObject.GetComponent<DanceBlock>().leftBlock;
+		var dbb = collision.gameObject.GetComponent<DanceBlock>();
+		var db = dbb.leftBlock;
 
-		if (db) { touchingLeftOrRightBlock = 1; }
-		if (!db) { touchingLeftOrRightBlock = 2; }
+		if (dbb != null)
+		{
+			if (db) { touchingLeftOrRightBlock = 1; }
+			if (!db) { touchingLeftOrRightBlock = 2; }
+		}
 	}
 
 	private void OnTriggerExit2D(Collider2D collision)
