@@ -1,0 +1,230 @@
+fileFormatVersion: 2
+guid: 6cc6d85089fa7644295cd5023cf7186c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8281321213878298372
+    second: Meditating_Frog_Idle
+  - first:
+      213: -7181998575316962310
+    second: Meditating_Frog_1
+  - first:
+      213: -3328243756692861207
+    second: Meditating_Frog_2
+  - first:
+      213: 7408094196139517220
+    second: Meditating_Frog_3
+  - first:
+      213: 2435821581159973985
+    second: Meditating_Frog_4
+  - first:
+      213: -1604026092092159754
+    second: Meditating_Frog_5
+  - first:
+      213: -2819860983954478147
+    second: Meditating_Frog_6
+  - first:
+      213: -3939744586124652528
+    second: Meditating_Frog_7
+  - first:
+      213: 7445541312399311677
+    second: Meditating_Frog_8
+  - first:
+      213: -7598053336496730983
+    second: Meditating_Frog_9
+  - first:
+      213: 3888955613813452334
+    second: Meditating_Frog_10
+  - first:
+      213: 2431656897605973145
+    second: Meditating_Frog_11
+  - first:
+      213: -927110702923858013
+    second: Meditating_Frog_Tongue
+  - first:
+      213: 4645104570431715428
+    second: Meditating_Frog_Win
+  - first:
+      213: -4291236131599752904
+    second: Meditating_Frog_14
+  - first:
+      213: -4815328160631457755
+    second: Meditating_Frog_15
+  - first:
+      213: 952199127292487421
+    second: Meditating_Frog_16
+  - first:
+      213: 2660106402084953447
+    second: Meditating_Frog_17
+  - first:
+      213: -8464105361180322218
+    second: Meditating_Frog_18
+  - first:
+      213: 6657495178875929490
+    second: Meditating_Frog_19
+  - first:
+      213: -8330007786610394390
+    second: Meditating_Frog_20
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 255, z: 256, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Meditating_Frog_Idle
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 266
+        width: 41
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf890e77b36d21d80800000000000000
+      internalID: -8281321213878298372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Meditating_Frog_Tongue
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 138
+        width: 41
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3afb2cc4abd3223f0800000000000000
+      internalID: -927110702923858013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Meditating_Frog_Win
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 138
+        width: 52
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4683029fef9b67040800000000000000
+      internalID: 4645104570431715428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
