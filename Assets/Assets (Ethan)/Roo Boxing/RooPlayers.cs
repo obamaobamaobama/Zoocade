@@ -20,16 +20,18 @@ public class RooPlayers : MonoBehaviour
 	{
 		_anim.SetTrigger("Block");
 		blocking = true;
-		CancelInvoke("StopBlocking");
+		//CancelInvoke("StopBlocking");
+		CancelInvoke();
 		Invoke("StopBlocking", 0.10f);
 	}
 
 	public void zPunch()
 	{
-		_anim.SetTrigger("Punch");
 		punching = true;
-		CancelInvoke("StopPunching");
-		Invoke("StopPunching", 0.05f);
+		_anim.SetTrigger("Punch");
+		//CancelInvoke("StopPunching");
+		CancelInvoke();
+		Invoke("StopPunching", 0.10f);
 	}
 
 	public void Punched()
@@ -44,6 +46,10 @@ public class RooPlayers : MonoBehaviour
 			_anim.SetTrigger("Dead");
 		}
 	}
+
+
+	public void zPunchReleased() { if (punching) { punching = false; } }
+	public void zBlockReleased() { if (blocking) { blocking = false; } }
 
 
 
