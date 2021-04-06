@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Fly : MonoBehaviour
+public class FlyGo : MonoBehaviour
 {
     private float flySpeed;
-	public bool flyGo;
+	public bool flyDrop;
 
 	private void Start()
 	{
@@ -14,7 +14,7 @@ public class Fly : MonoBehaviour
 
 	private void Update()
 	{
-		if (flyGo)
+		if (flyDrop)
 		{
 			if (this.GetComponent<RectTransform>().position.x < -7)
 			{

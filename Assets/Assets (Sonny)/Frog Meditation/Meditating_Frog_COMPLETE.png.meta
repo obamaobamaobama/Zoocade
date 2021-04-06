@@ -1,16 +1,19 @@
 fileFormatVersion: 2
-guid: 40148e6b961fc624694f6f8d2e538457
+guid: 24540f55ac6086a45a42fbd901095176
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4311861726072299734
-    second: Fly_1
+      213: -5460193168808145009
+    second: Meditating_Frog_COMPLETE_0
   - first:
-      213: 2430389046150711970
-    second: Fly_2
+      213: -8064543259636095698
+    second: Meditating_Frog_COMPLETE_12
   - first:
-      213: -5385273743578017781
-    second: Fly_KO
+      213: -1788902764437868224
+    second: Meditating_Frog_COMPLETE_13
+  - first:
+      213: 6266568461688367427
+    second: Meditating_Frog_COMPLETE_21
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -54,7 +57,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 64
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -96,64 +99,85 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Fly_1
+      name: Meditating_Frog_COMPLETE_0
       rect:
         serializedVersion: 2
-        x: 20
-        y: 226
-        width: 16
-        height: 14
+        x: 1
+        y: 326
+        width: 64
+        height: 58
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a2f9bd8fa903924c0800000000000000
-      internalID: -4311861726072299734
+      spriteID: f8f0d280e3f7934b0800000000000000
+      internalID: -5460193168808145009
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fly_2
+      name: Meditating_Frog_COMPLETE_12
       rect:
         serializedVersion: 2
-        x: 84
-        y: 224
-        width: 17
-        height: 16
+        x: 130
+        y: 200
+        width: 60
+        height: 55
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 2}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2aa40d1f5f97ab120800000000000000
-      internalID: 2430389046150711970
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Fly_KO
-      rect:
-        serializedVersion: 2
-        x: 18
-        y: 162
-        width: 20
-        height: 14
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b005bc7001aa345b0800000000000000
-      internalID: -5385273743578017781
+      spriteID: e25ae9512acf41090800000000000000
+      internalID: -8064543259636095698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Meditating_Frog_COMPLETE_13
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 200
+        width: 53
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04177fbe96a8c27e0800000000000000
+      internalID: -1788902764437868224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Meditating_Frog_COMPLETE_21
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 71
+        width: 56
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 349e99f60d257f650800000000000000
+      internalID: 6266568461688367427
       vertices: []
       indices: 
       edges: []

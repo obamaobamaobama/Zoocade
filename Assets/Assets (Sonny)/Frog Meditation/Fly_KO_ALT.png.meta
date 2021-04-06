@@ -1,16 +1,16 @@
 fileFormatVersion: 2
-guid: 40148e6b961fc624694f6f8d2e538457
+guid: 1456e0f2755861544993d1abeba41c62
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4311861726072299734
-    second: Fly_1
+      213: 4729021615749622008
+    second: Fly_KO_ALT_0
   - first:
-      213: 2430389046150711970
-    second: Fly_2
+      213: -2323236121164853160
+    second: Fly_KO_ALT_1
   - first:
-      213: -5385273743578017781
-    second: Fly_KO
+      213: 5168276226779731674
+    second: Fly_KO_ALT_4
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -96,64 +96,64 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Fly_1
+      name: Fly_KO_ALT_0
       rect:
         serializedVersion: 2
-        x: 20
-        y: 226
-        width: 16
-        height: 14
+        x: 16
+        y: 225
+        width: 26
+        height: 20
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a2f9bd8fa903924c0800000000000000
-      internalID: -4311861726072299734
+      spriteID: 8f866e5aa1cd0a140800000000000000
+      internalID: 4729021615749622008
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fly_2
+      name: Fly_KO_ALT_1
       rect:
         serializedVersion: 2
-        x: 84
+        x: 81
         y: 224
-        width: 17
-        height: 16
+        width: 24
+        height: 20
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 2}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2aa40d1f5f97ab120800000000000000
-      internalID: 2430389046150711970
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Fly_KO
-      rect:
-        serializedVersion: 2
-        x: 18
-        y: 162
-        width: 20
-        height: 14
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b005bc7001aa345b0800000000000000
-      internalID: -5385273743578017781
+      spriteID: 850dc9c8e0532cfd0800000000000000
+      internalID: -2323236121164853160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fly_KO_ALT_4
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 162
+        width: 23
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad65d4678d769b740800000000000000
+      internalID: 5168276226779731674
       vertices: []
       indices: 
       edges: []
