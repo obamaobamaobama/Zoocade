@@ -4,18 +4,18 @@ using UnityEngine;
 
 public class FrogMeditationManager : MonoBehaviour
 {
-	public float flySpeed;
-	[SerializeField] private float flyGoTimer;
-	[SerializeField] private bool flyGone = false;
+	//public float flySpeed;
+	//[SerializeField] private float flyGoTimer;
+	//[SerializeField] private bool flyGone = false;
 
 	private void Awake()
 	{
 		//flySpeed = Random.Range(250, 550);
-		flySpeed = Random.Range(150, 250);
-		flyGoTimer = Random.Range(2, 5);
+		//flySpeed = Random.Range(150/5, 250/5);
+		//flyGoTimer = Random.Range(2, 5);
 	}
 
-	private void Update()
+	/*private void Update()
 	{
 		if (!flyGone)
 		{
@@ -30,7 +30,7 @@ public class FrogMeditationManager : MonoBehaviour
 				flyGone = true;
 			}
 		}
-	}
+	}*/
 
 
 	public void zTimesUp()
