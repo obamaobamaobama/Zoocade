@@ -14,6 +14,10 @@ public class MonkeyDodge : MonoBehaviour
     public bool grounded;
     public float whereIsGroundY;
 
+    //Audio here
+    public AudioSource playerAudio;
+    public AudioClip jump;
+
     public void FixedUpdate()
     {
         if(isCrouching)
@@ -57,6 +61,9 @@ public class MonkeyDodge : MonoBehaviour
     {
          if(grounded && !isCrouching)
         {
+            playerAudio.clip= jump;
+            playerAudio.Play();
+
             vsp = 0;
             vsp += jumpForce;
             grounded = false;
