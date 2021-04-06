@@ -20,5 +20,9 @@ public class ObjectDestory : MonoBehaviour
         {
             Destroy(collision.gameObject);
         }
+        if (collision.tag =="Bomb")
+        {
+            Destroy(collision.gameObject);
+        }
     }
 }
