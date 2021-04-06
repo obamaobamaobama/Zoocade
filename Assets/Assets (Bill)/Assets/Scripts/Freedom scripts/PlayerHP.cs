@@ -11,6 +11,11 @@ public class PlayerHP : MonoBehaviour
     public Animator ani;
    public bool explosive;
 
+    //E audio here
+    public AudioSource audioManager;
+    public AudioClip explosion;
+    public AudioClip hit;
+
    void Start()
    {
        rb = GetComponent<Rigidbody2D>();
@@ -20,6 +25,10 @@ public class PlayerHP : MonoBehaviour
        if(other.gameObject.tag == "Enemy")
        {
            hp--;
+
+            audioManager.clip = hit;
+            audioManager.Play();
+
            if(destroyEnmeyOnTrigger)
            {
             Destroy(other.gameObject);
@@ -29,7 +38,9 @@ public class PlayerHP : MonoBehaviour
        if(other.gameObject.tag == "Bomb")
        {
            hp--;
-       }
+           audioManager.clip = hit;
+           audioManager.Play();
+        }
    }
    void Update()
    {
@@ -51,10 +62,14 @@ public class PlayerHP : MonoBehaviour
        {
            Destroy(rb);
            ani.Play("Player explode");
+            //E
+           
        }
        if(hp<= 0 && !explosive)
        {
-           Destroy(gameObject);
-       }
+            audioManager.clip = explosion;
+            audioManager.Play();
+            Destroy(gameObject);
+        }
    }
 }
