@@ -22,17 +22,17 @@ public class Point_Calculator_Frog : MonoBehaviour
         }
         if (col.tag == "Bomb")
         {
-            GameObject.Find("FrogMonk P1");
-            Destroy(gameObject);
-            Destroy(this);
+           // GameObject.Find("FrogMonk P1");
+          //  Destroy(gameObject);
+          //  Destroy(this);
 
-            GameObject.Find("FrogMonk P2");
-            Destroy(gameObject);
-            Destroy(this);
+          //  GameObject.Find("FrogMonk P2");
+          //  Destroy(gameObject);
+         //   Destroy(this);
 
             Destroy(col.gameObject);
 
-            GetComponent<Animator>().SetBool("Destroy", true);
+            GetComponent<Animator>().Play("Frog_Destroy");
         }
     }
     void Update()
