@@ -31,6 +31,8 @@ public class Point_Calculator_Frog : MonoBehaviour
             Destroy(this);
 
             Destroy(col.gameObject);
+
+            GetComponent<Animator>().SetBool("Destroy", true);
         }
     }
     void Update()
