@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class ShipMovement : MonoBehaviour
 {
-    [SerializeField]
     private float speed;
     public int rotationSpeed;
     public int maximumTilt;

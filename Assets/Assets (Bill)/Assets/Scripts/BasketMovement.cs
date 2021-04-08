@@ -11,6 +11,8 @@ public class BasketMovement : MonoBehaviour
     public bool grounded;
     // Ethan wrote this
     public float boundaryLimit = 4;
+
+    public AudioSource speaker;
     
     
     public Transform player;
@@ -40,6 +42,7 @@ public class BasketMovement : MonoBehaviour
             vsp = 0;
             vsp += jumpForce;
             grounded = false;
+            speaker.Play();
         }
         
     }

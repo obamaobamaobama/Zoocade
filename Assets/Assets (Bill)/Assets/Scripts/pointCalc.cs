@@ -4,7 +4,6 @@ using UnityEngine;
 using UnityEngine.UI;
 public class pointCalc : MonoBehaviour
 {
-    [SerializeField]
     public static int P1Score;
     public static int P2Score;
     public Text P1text;

@@ -5,10 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class PlayerDestroyed : MonoBehaviour
 {
+  public static int P1Score;
+  public static int P2Score;
     public Animator animator;
     public Transform player;
     public string tagignore;
     public Collider2D myCollider;
+    public AudioSource audioManager;
 
   void Start()
   {
@@ -23,7 +26,13 @@ public class PlayerDestroyed : MonoBehaviour
       else
       {
         myCollider.enabled = false;
-        animator.Play("Player explode"); //*E The behavior on the animator tab have the destory script (basically destroy gameobject after animation finished playing). here you can try to add a player lost method, but this script is also on enemyships
+        animator.Play("Player explode");
+
+        if (audioManager != null) 
+        {
+          audioManager.Play();
+        }
+                          
         
         var currentScene = SceneManager.GetActiveScene().name;
         if(currentScene == "Aesteroid")

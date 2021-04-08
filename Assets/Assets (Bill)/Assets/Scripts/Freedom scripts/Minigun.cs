@@ -29,6 +29,8 @@ public class Minigun : MonoBehaviour
     private bool flipped = false;
     public Animator ani;
 
+    public AudioSource speaker;
+
     public void FixedUpdate()
     {
       if (readyToShoot == false)
@@ -82,6 +84,7 @@ public class Minigun : MonoBehaviour
           bulletClone = Instantiate(bullet, new Vector3(muzzlePosR.position.x,(muzzlePosR.position.y)), transform.localRotation) as GameObject;
           readyToShoot = false;
           ani.Play("Gun fire");
+          speaker.Play();
         }
         else //flipped, different locations for muzzle
         {
@@ -89,6 +92,7 @@ public class Minigun : MonoBehaviour
           bulletClone = Instantiate(bullet, new Vector3(muzzlePosL.position.x,(muzzlePosL.position.y)), transform.localRotation) as GameObject;
           readyToShoot = false;
           ani.Play("Gun fire");
+          speaker.Play();
         }
       }
       

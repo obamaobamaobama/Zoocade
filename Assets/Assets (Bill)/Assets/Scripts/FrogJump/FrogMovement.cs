@@ -6,6 +6,7 @@ public class FrogMovement : MonoBehaviour
 {
     public float speed;
     private Animator ani;
+    public AudioSource speaker;
 
     // Ethan wrote this
     public float boundaryLimit = 5.5f;
@@ -50,6 +51,7 @@ public class FrogMovement : MonoBehaviour
         if (collision.relativeVelocity.y >=0f) // checking if the platform collides is from the bottom
         {
             ani.SetBool("AnimatorGrounded",true);
+             speaker.Play();
         }
         
     }
