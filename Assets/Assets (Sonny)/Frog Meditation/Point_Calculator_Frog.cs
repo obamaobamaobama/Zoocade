@@ -14,6 +14,7 @@ public class Point_Calculator_Frog : MonoBehaviour
         {
             points += 1;
             Destroy(col.gameObject);
+            GetComponent<Animator>().Play("Frog_Splat");
         }
         if (col.tag == "minus")
         {
