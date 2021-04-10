@@ -1,28 +1,31 @@
 fileFormatVersion: 2
-guid: 33bb0117f8b408f42be01f6e7fbe4c49
+guid: 185abdc6976efe04388df6a16a7e0182
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2977073072728866878
-    second: Guard_Dog_with_Spotlight2_0
+      213: -6006218885076426520
+    second: Cat_Burglar_Caught2_0
   - first:
-      213: 6457320961805223559
-    second: Guard_Dog_with_Spotlight2_1
+      213: -3463861766667842866
+    second: Cat_Burglar_Caught2_1
   - first:
-      213: -4031274081280806424
-    second: Guard_Dog_with_Spotlight2_2
+      213: -7899841028287743937
+    second: Cat_Burglar_Caught2_2
   - first:
-      213: 20722792274252764
-    second: Guard_Dog_with_Spotlight2_3
+      213: -259591936291000900
+    second: Cat_Burglar_Caught2_3
   - first:
-      213: -4527076127860045023
-    second: Guard_Dog_with_Spotlight2_4
+      213: -8219376216595078954
+    second: Cat_Burglar_Caught2_4
   - first:
-      213: 9141870983307446335
-    second: Guard_Dog_with_Spotlight2_5
+      213: -3995159017438725115
+    second: Cat_Burglar_Caught2_5
   - first:
-      213: 1444018339000084519
-    second: Guard_Dog_with_Spotlight2_6
+      213: 6461380964314451881
+    second: Cat_Burglar_Caught2_6
+  - first:
+      213: 3631141487095571660
+    second: Cat_Burglar_Caught2_7
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -66,7 +69,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 128
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -108,127 +111,169 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Guard_Dog_with_Spotlight2_0
+      name: Cat_Burglar_Caught2_0
       rect:
         serializedVersion: 2
-        x: 125
-        y: 398
-        width: 71
-        height: 113
+        x: 1
+        y: 65
+        width: 31
+        height: 27
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2cf7d9540df4fa6d0800000000000000
-      internalID: -2977073072728866878
+      spriteID: 8e0e6cf0fbf95aca0800000000000000
+      internalID: -6006218885076426520
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Guard_Dog_with_Spotlight2_1
+      name: Cat_Burglar_Caught2_1
       rect:
         serializedVersion: 2
-        x: 253
-        y: 271
-        width: 72
-        height: 112
+        x: 33
+        y: 65
+        width: 31
+        height: 27
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7868511d3330d9950800000000000000
-      internalID: 6457320961805223559
+      spriteID: ecac4b65314edefc0800000000000000
+      internalID: -3463861766667842866
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Guard_Dog_with_Spotlight2_2
+      name: Cat_Burglar_Caught2_2
       rect:
         serializedVersion: 2
-        x: 127
-        y: 140
-        width: 70
-        height: 116
+        x: 65
+        y: 65
+        width: 31
+        height: 27
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8e1b409e4990e08c0800000000000000
-      internalID: -4031274081280806424
+      spriteID: f383ade90702e5290800000000000000
+      internalID: -7899841028287743937
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Guard_Dog_with_Spotlight2_3
+      name: Cat_Burglar_Caught2_3
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 33
+        width: 31
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbda1d2628eb56cf0800000000000000
+      internalID: -259591936291000900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat_Burglar_Caught2_4
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 33
+        width: 31
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d06e8e01e8eeed80800000000000000
+      internalID: -8219376216595078954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat_Burglar_Caught2_5
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 33
+        width: 31
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50cbd587a085e88c0800000000000000
+      internalID: -3995159017438725115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat_Burglar_Caught2_6
       rect:
         serializedVersion: 2
         x: 0
-        y: 13
-        width: 66
-        height: 113
+        y: 0
+        width: 31
+        height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cd3d240154f994000800000000000000
-      internalID: 20722792274252764
+      spriteID: 9af0f60d0cf6ba950800000000000000
+      internalID: 6461380964314451881
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Guard_Dog_with_Spotlight2_5
+      name: Cat_Burglar_Caught2_7
       rect:
         serializedVersion: 2
-        x: 380
-        y: 397
-        width: 72
-        height: 113
+        x: 33
+        y: 2
+        width: 31
+        height: 29
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 1, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f38cd7e39337ede70800000000000000
-      internalID: 9141870983307446335
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Guard_Dog_with_Spotlight2_6
-      rect:
-        serializedVersion: 2
-        x: 382
-        y: 272
-        width: 70
-        height: 111
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 728ef31570f2a0410800000000000000
-      internalID: 1444018339000084519
+      spriteID: cc4e383a1f7646230800000000000000
+      internalID: 3631141487095571660
       vertices: []
       indices: 
       edges: []

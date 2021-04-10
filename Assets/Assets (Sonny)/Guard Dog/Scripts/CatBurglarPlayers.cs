@@ -8,16 +8,29 @@ public class CatBurglarPlayers : MonoBehaviour
 
 	public bool GotFish = false;
 
-	public Collider2D burglarTriggerZone;
+	//public void OnTriggerEnter2D(Collider2D col);
 
-	private void GetFish(GameObject _collision)
+	private void Awake()
 	{
-		_anim.SetBool("FishStole", true);
-		GotFish = true;
-		Destroy(_collision);
+		_anim = this.GetComponent<Animator>();
+	}
 
-		var TM = GameObject.Find("TimeManager").GetComponent<TimeManager>();
-		if (this.gameObject.name == "CatBurglar P1") { TM.zP1Done(); }
-		if (this.gameObject.name == "CatBurglar P2") { TM.zP2Done(); }
+	//private void GetFish(GameObject _collision)
+	//{
+		//_anim.SetBool("FishStole", true);
+		//GotFish = true;
+		//Destroy(_collision);
+
+		//var TM = GameObject.Find("TimeManager").GetComponent<TimeManager>();
+		//if (this.gameObject.name == "CatBurglar P1") { TM.zP1Done(); }
+		//if (this.gameObject.name == "CatBurglar P2") { TM.zP2Done(); }
+	//}
+
+	private void OnTriggerStay2D(Collider2D collision)
+	{
+		if (collision.gameObject.tag == "Enemy")
+		{
+			_anim.SetBool("Caught", true);
+		}
 	}
 }

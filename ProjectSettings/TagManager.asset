@@ -12,6 +12,7 @@ TagManager:
   - ground
   - Bomb
   - bounds
+  - fish
   layers:
   - Default
   - TransparentFX
