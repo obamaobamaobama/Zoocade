@@ -41,12 +41,15 @@ public class CatBurglarPlayers : MonoBehaviour
 		if (collision.gameObject.tag == "Enemy")
 		{
 			_anim.SetBool("Caught", true);
+			
+			GameObject.Find("Control_Manager").GetComponent<ControlManager>().enabled = false;
 		}
 
 		if (collision.gameObject.tag == "fish")
         {
 			_anim.SetBool("FishStole", true);
 			GotFish = true;
-        }
+			GameObject.Find("Control_Manager").GetComponent<ControlManager>().enabled = false;
+		}
 	}
 }

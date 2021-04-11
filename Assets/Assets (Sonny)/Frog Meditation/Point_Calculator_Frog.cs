@@ -8,6 +8,7 @@ public class Point_Calculator_Frog : MonoBehaviour
     public Text p1txt;
     public int points = 0;
     public string player1or2;
+
     public void OnTriggerEnter2D(Collider2D col)
     {
         if (col.tag == "plus")
@@ -34,6 +35,9 @@ public class Point_Calculator_Frog : MonoBehaviour
             Destroy(col.gameObject);
 
             GetComponent<Animator>().Play("Frog_Destroy");
+
+            GameObject.Find("Control_Manager").GetComponent<ControlManager>().enabled = false;
+
         }
     }
     void Update()
