@@ -23,12 +23,19 @@ public class SheepHealth : MonoBehaviour
         hairTriggerZone.enabled = true;
     }
 
+    // void CutHair(GameObject _collision)
+    //{
+    //    _anim.SetBool("Hit", true);
+   // }
+
     public void TakeDamage(int DamageToTake)
     {
         health -= DamageToTake;
         if (health <= 0)
         {
             _anim.SetBool("Cut", true);
+
+            HairCut = true;
            
             GameObject.Find("Control_Manager").GetComponent<ControlManager>().enabled = false;
 
