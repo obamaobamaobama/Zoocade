@@ -17,6 +17,12 @@ TextureImporter:
   - first:
       213: 3920184088120031508
     second: Frog_Explosion2_4
+  - first:
+      213: -2821940270088533218
+    second: Frog_Explosion2_5
+  - first:
+      213: -2089462180300296326
+    second: Frog_Explosion2_6
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -202,6 +208,48 @@ TextureImporter:
       bones: []
       spriteID: 419788a78aa476630800000000000000
       internalID: 3920184088120031508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frog_Explosion2_5
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 177
+        width: 30
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1bc000964476d8d0800000000000000
+      internalID: -2821940270088533218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frog_Explosion2_6
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 49
+        width: 31
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7f669ba73db003e0800000000000000
+      internalID: -2089462180300296326
       vertices: []
       indices: 
       edges: []
