@@ -8,12 +8,22 @@ public class CatBurglarPlayers : MonoBehaviour
 
 	public bool GotFish = false;
 
+	public Collider2D burglarTriggerZone;
+
 	//public void OnTriggerEnter2D(Collider2D col);
 
 	private void Awake()
 	{
 		_anim = this.GetComponent<Animator>();
+		burglarTriggerZone.enabled = true;
 	}
+	public void FixedUpdate()
+    {
+		if (_anim.GetCurrentAnimatorStateInfo(0).IsName("Cat_Caught"))
+        {
+			burglarTriggerZone.enabled = false;
+        }
+    }
 
 	//private void GetFish(GameObject _collision)
 	//{
@@ -32,5 +42,11 @@ public class CatBurglarPlayers : MonoBehaviour
 		{
 			_anim.SetBool("Caught", true);
 		}
+
+		if (collision.gameObject.tag == "fish")
+        {
+			_anim.SetBool("FishStole", true);
+			GotFish = true;
+        }
 	}
 }
