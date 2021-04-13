@@ -55,8 +55,8 @@ public class FrogPlayerss : MonoBehaviour
 		IcaughtFly = true;
 		Destroy(_collision);
 
-		var TM = GameObject.Find("TimeManager").GetComponent<TimeManager>();
-		if (this.gameObject.name == "FrogMonk P1") { TM.zP1Done(); }
-		if (this.gameObject.name == "FrogMonk P2") { TM.zP2Done(); }
+		//var TM = GameObject.Find("TimeManager").GetComponent<TimeManager>();
+		//if (this.gameObject.name == "FrogMonk P1") { TM.zP1Done(); }
+		//if (this.gameObject.name == "FrogMonk P2") { TM.zP2Done(); }
 	}
 }
