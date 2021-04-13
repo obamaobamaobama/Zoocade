@@ -33,6 +33,22 @@ public class SheepHealth : MonoBehaviour
         var TM = GameObject.Find("TimeManager").GetComponent<TimeManager>();
 
         health -= DamageToTake;
+
+        if (health <= 750)
+        {
+            _anim.SetBool("75", true);
+        }
+
+        if (health <= 500)
+        {
+            _anim.SetBool("50", true);
+        }
+
+        if (health <= 250)
+        {
+            _anim.SetBool("25", true);
+        }
+
         if (health <= 0)
         {
             _anim.SetBool("Cut", true);
