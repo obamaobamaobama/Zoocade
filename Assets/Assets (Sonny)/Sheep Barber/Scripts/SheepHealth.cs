@@ -30,7 +30,25 @@ public class SheepHealth : MonoBehaviour
 
     public void TakeDamage(int DamageToTake)
     {
+        var TM = GameObject.Find("TimeManager").GetComponent<TimeManager>();
+
         health -= DamageToTake;
+
+        if (health <= 750)
+        {
+            _anim.SetBool("75", true);
+        }
+
+        if (health <= 500)
+        {
+            _anim.SetBool("50", true);
+        }
+
+        if (health <= 250)
+        {
+            _anim.SetBool("25", true);
+        }
+
         if (health <= 0)
         {
             _anim.SetBool("Cut", true);
@@ -38,6 +56,8 @@ public class SheepHealth : MonoBehaviour
             HairCut = true;
            
             GameObject.Find("Control_Manager").GetComponent<ControlManager>().enabled = false;
+            if (this.gameObject.name == "Sheep_Afro P1") { TM.zP1Done(); TM.zP1Wins(); }
+            if (this.gameObject.name == "Sheep_Afro P2") { TM.zP2Done(); TM.zP2Wins(); }
 
         }
     }

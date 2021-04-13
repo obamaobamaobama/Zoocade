@@ -38,29 +38,29 @@ public class FrogMeditationManager : MonoBehaviour
 		var TM = GameObject.Find("TimeManager").GetComponent<TimeManager>();
 		var p1 = GameObject.Find("FrogMonk P1");
 		var p2 = GameObject.Find("FrogMonk P2");
+		var p1Score = GameObject.Find("FrogMonk P1").GetComponent<Point_Calculator_Frog>().points;
+		var p2Score = GameObject.Find("FrogMonk P2").GetComponent<Point_Calculator_Frog>().points;
 
-		if (p1.GetComponent<FrogMonkController>().IcaughtFly && p2.GetComponent<FrogMonkController>().IcaughtFly)
-		{
-			// Both players win
-			TM.zP12Wins();
-		}
-
-		if (!p1.GetComponent<FrogMonkController>().IcaughtFly && !p2.GetComponent<FrogMonkController>().IcaughtFly)
+		if (p1.GetComponent<Point_Calculator_Frog>().FrogKO && p2.GetComponent<Point_Calculator_Frog>().FrogKO)
 		{
 			// Both players lose
 			TM.zP12Wins();
 		}
 
-		if (p1.GetComponent<FrogMonkController>().IcaughtFly && !p2.GetComponent<FrogMonkController>().IcaughtFly)
+		if (p1.GetComponent<Point_Calculator_Frog>().FrogKO && !p2.GetComponent<Point_Calculator_Frog>().FrogKO)
+		{
+			// P2 Wins
+			TM.zP2Wins();
+		}
+
+		if (!p1.GetComponent<Point_Calculator_Frog>().FrogKO && p2.GetComponent<Point_Calculator_Frog>().FrogKO)
 		{
 			// P1 Wins
 			TM.zP1Wins();
 		}
 
-		if (!p1.GetComponent<FrogMonkController>().IcaughtFly && p2.GetComponent<FrogMonkController>().IcaughtFly)
-		{
-			// P2 Wins
-			TM.zP2Wins();
-		}
+		if (p1Score > p2Score) { TM.zP1Wins(); }
+		if (p1Score < p2Score) { TM.zP2Wins(); }
+		if (p1Score == p2Score) { TM.zP12Wins(); }
 	}
 }

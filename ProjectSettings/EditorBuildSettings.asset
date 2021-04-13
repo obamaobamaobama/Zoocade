@@ -62,4 +62,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Bill's Scenes/Monkey dodge.unity
     guid: d7ffd845b7618d646943596c968f70d0
+  - enabled: 1
+    path: Assets/Scenes/Sonny's Scenes/Sheep Barber.unity
+    guid: 8300245ae940f5247a4595d27b72cbc0
+  - enabled: 1
+    path: Assets/Scenes/Sonny's Scenes/Guard Dog.unity
+    guid: fca8e1b1fa35d394ebaac0f453ed2e10
+  - enabled: 1
+    path: Assets/Scenes/Sonny's Scenes/FrogMeditation.unity
+    guid: 620e7c66ebfd4cc47b01bfdfbdf664e1
   m_configObjects: {}
