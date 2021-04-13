@@ -207,6 +207,7 @@ public class TimeManager : MonoBehaviour
 		p2wl.SetActive(true);
 
 
+		// if both win
 		if (whoWon == 0)
 		{
 			p1wlt.SetActive(true);
@@ -232,6 +233,16 @@ public class TimeManager : MonoBehaviour
 
 			p2wlt.SetActive(true);
 			p2wlc.SetActive(false);
+		}
+
+		// if both lose
+		if (whoWon == 3)
+		{
+			p1wlt.SetActive(false);
+			p1wlc.SetActive(true);
+
+			p2wlt.SetActive(false);
+			p2wlc.SetActive(true);
 		}
 
 		Invoke("StartFade", 1f);
@@ -268,6 +279,12 @@ public class TimeManager : MonoBehaviour
 	public void zP12Wins()
 	{
 		whoWon = 0;
+		GiveWinnerLoserIcons();
+	}
+
+	public void zP12Lose()
+	{
+		whoWon = 3;
 		GiveWinnerLoserIcons();
 	}
 

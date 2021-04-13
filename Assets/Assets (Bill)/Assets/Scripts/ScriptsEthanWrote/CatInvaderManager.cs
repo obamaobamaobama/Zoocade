@@ -22,6 +22,7 @@ public class CatInvaderManager : MonoBehaviour
 
 			if (P1 != null && P2 == null) { TM.zP1Wins(); }
 			if (P1 == null && P2 != null) { TM.zP2Wins(); }
+			if (P1 == null && P2 == null) { TM.zP12Lose(); }
 		}
 	}
 

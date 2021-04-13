@@ -5,9 +5,11 @@ using UnityEngine;
 public class CameraMove : MonoBehaviour
 {
    public float speed;
-    
-    void LateUpdate()
+
+    void Update()
     {
-        transform.position = transform.position + new Vector3(speed * Time.deltaTime, 0);
+        Vector3 nextPos = transform.position;
+        nextPos.x = transform.position.x + (speed * Time.deltaTime);
+        transform.position = nextPos;
     }
 }
