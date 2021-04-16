@@ -9,10 +9,14 @@ public class DodgePlayers : MonoBehaviour
 	private bool touchingGround = false;
 	private Animator _animator;
 	[HideInInspector] public bool dead = false;
+	public AudioClip jumpSound;
+	public AudioClip deathSound;
+	private AudioSource _audio;
 
 	private void Start()
 	{
 		_animator = this.GetComponent<Animator>();
+		_audio = this.GetComponent<AudioSource>();
 	}
 
 	private void Update()
@@ -50,7 +54,13 @@ public class DodgePlayers : MonoBehaviour
 
 	public void zJump()
 	{
-		if (touchingGround && !dead) { vsp = 10; } else { vsp = 7.5f; }
+		if (touchingGround && !dead) { vsp = 10; PlaySound(jumpSound); } else { if (!dead) { vsp = 7.5f; PlaySound(jumpSound); } }
+	}
+
+	private void PlaySound(AudioClip _sound)
+	{
+		_audio.clip = _sound;
+		_audio.Play();
 	}
 
 
@@ -58,5 +68,6 @@ public class DodgePlayers : MonoBehaviour
 	{
 		_animator.SetTrigger("Dead");
 		dead = true;
+		PlaySound(deathSound);
 	}
 }

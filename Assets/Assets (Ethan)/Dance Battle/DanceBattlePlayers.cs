@@ -10,9 +10,14 @@ public class DanceBattlePlayers : MonoBehaviour
 	private int touchingLeftOrRightBlock = 0;
 	private bool deleteDanceBlock = false;
 
+	private AudioSource _audio;
+	public AudioClip dance1;
+	public AudioClip dance2;
+
 	private void Start()
 	{
 		_anim = this.GetComponent<Animator>();
+		_audio = this.GetComponent<AudioSource>();
 	}
 
 	public void zLeft()
@@ -21,7 +26,8 @@ public class DanceBattlePlayers : MonoBehaviour
 		{
 			_anim.SetTrigger("Left");
 			deleteDanceBlock = true;
-		}
+			if (this.gameObject.name == "DancerPlayer1") { PlaySound(dance1); }
+			}
 	}
 
 	public void zRight()
@@ -30,6 +36,7 @@ public class DanceBattlePlayers : MonoBehaviour
 		{
 			_anim.SetTrigger("Right");
 			deleteDanceBlock = true;
+			if (this.gameObject.name == "DancerPlayer1") { PlaySound(dance2); }
 		}
 	}
 
@@ -42,6 +49,13 @@ public class DanceBattlePlayers : MonoBehaviour
 	public void Lost()
 	{
 		_anim.SetTrigger("Fail");
+	}
+
+
+	private void PlaySound(AudioClip _sound)
+	{
+		_audio.clip = _sound;
+		_audio.Play();
 	}
 
 

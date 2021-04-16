@@ -42,7 +42,7 @@ public class RandomGameSelect : MonoBehaviour
 		//this.GetComponent<Image>().sprite = sprites[Random.Range(0, sprites.Length)];
 		// when all games are added
 		//int[] numbers = { 11-1, 12-1, 13-1, 14-1, 21-1, 22-1, 25-1 };
-		int[] numbers = { 11-1, 12-1, /*13-1,*/ 14-1, 15-1, 16-1, 17-1, /*18-1,*/ 21-1, 22-1, 25-1 };
+		int[] numbers = { 4-1, 5-1, 6-1, 7-1, 8-1, 11-1, 12-1, 13-1, 14-1, 15-1, 16-1, 17-1, 18-1, 19-1, 20-1, 21-1, 22-1, 23-1, 24-1, 25-1, 26-1, 27-1 };
 		int randomIndex = Random.Range(0, numbers.Length);
 		int randomIntFromNumbers = numbers[randomIndex];
 		this.GetComponent<Image>().sprite = sprites[randomIntFromNumbers];
@@ -90,17 +90,22 @@ public class RandomGameSelect : MonoBehaviour
 		//if (this.GetComponent<Image>().sprite == sprites[1-1]) { SceneManager.LoadSceneAsync("Surfing Fish"); }
 		//if (this.GetComponent<Image>().sprite == sprites[2-1]) { SceneManager.LoadSceneAsync("Frog Meditation"); }
 		//if (this.GetComponent<Image>().sprite == sprites[3-1]) { SceneManager.LoadSceneAsync("Flea Circus"); }
-		//if (this.GetComponent<Image>().sprite == sprites[4-1]) { SceneManager.LoadSceneAsync("Roo Boxing"); }
-		//if (this.GetComponent<Image>().sprite == sprites[5-1]) { SceneManager.LoadSceneAsync("Human Racing"); }
+		// 04. Roo Boxing
+		if (this.GetComponent<Image>().sprite == sprites[4 - 1]) { SceneManager.LoadScene(22); }
+		// 05. Human Racing
+		if (this.GetComponent<Image>().sprite == sprites[5 - 1]) { SceneManager.LoadScene(23); }
 
 
-		//if (this.GetComponent<Image>().sprite == sprites[6-1]) { SceneManager.LoadSceneAsync("Plenty of Fish"); }
-		//if (this.GetComponent<Image>().sprite == sprites[7-1]) { SceneManager.LoadSceneAsync("Guard Dog"); }
-		//if (this.GetComponent<Image>().sprite == sprites[8-1]) { SceneManager.LoadSceneAsync("Parrot-chute"); }
-		//if (this.GetComponent<Image>().sprite == sprites[9-1]) { SceneManager.LoadSceneAsync("Metamorphis"); }
-		//if (this.GetComponent<Image>().sprite == sprites[10-1]) { SceneManager.LoadSceneAsync("Sheep Barber"); }
+		// 06. Sheep Barber
+		if (this.GetComponent<Image>().sprite == sprites[6 - 1]) { SceneManager.LoadScene(19); }
+		// 07. Guard Dog
+		if (this.GetComponent<Image>().sprite == sprites[7 - 1]) { SceneManager.LoadScene(20); }
+		// 08. Frog Meditation
+		if (this.GetComponent<Image>().sprite == sprites[8 - 1]) { SceneManager.LoadScene(21); }
+		// 09 Cancelled
+		// 10 Cancelled
 
-		
+
 		// 11. Aesteroid
 		if (this.GetComponent<Image>().sprite == sprites[11-1]) { SceneManager.LoadScene(6); }
 		// 12. Basket
@@ -119,25 +124,31 @@ public class RandomGameSelect : MonoBehaviour
 		if (this.GetComponent<Image>().sprite == sprites[17-1]) { SceneManager.LoadScene(10); }
 		// 18. Trivia
 		if (this.GetComponent<Image>().sprite == sprites[18-1]) { SceneManager.LoadScene(13); }
-		//if (this.GetComponent<Image>().sprite == sprites[19-1]) { SceneManager.LoadSceneAsync("Bill 9"); }
-		//if (this.GetComponent<Image>().sprite == sprites[20-1]) { SceneManager.LoadSceneAsync("Bill 10"); }
+		// 19. Freedom
+		if (this.GetComponent<Image>().sprite == sprites[19 - 1]) { SceneManager.LoadScene(15); }
+		// 20. Jetpack
+		if (this.GetComponent<Image>().sprite == sprites[20 - 1]) { SceneManager.LoadScene(16); }
 
 
 		// 21. Flappy Bird
 		if (this.GetComponent<Image>().sprite == sprites[21-1]) { SceneManager.LoadScene(5); }
 		// 22. Reflex
 		if (this.GetComponent<Image>().sprite == sprites[22-1]) { SceneManager.LoadScene(14); }
-		//if (this.GetComponent<Image>().sprite == sprites[23-1]) { SceneManager.LoadSceneAsync("Dance Battle"); }
-		//if (this.GetComponent<Image>().sprite == sprites[24-1]) { SceneManager.LoadSceneAsync("Dodge"); }
+		// 23. Dance Battle
+		if (this.GetComponent<Image>().sprite == sprites[23 - 1]) { SceneManager.LoadScene(24); }
+		// 24. Dodge
+		if (this.GetComponent<Image>().sprite == sprites[23 - 1]) { SceneManager.LoadScene(25); }
 		// 25. Strength Test
 		if (this.GetComponent<Image>().sprite == sprites[25-1]) { SceneManager.LoadScene(4); }
 
 
-		//if (this.GetComponent<Image>().sprite == sprites[26-1]) { SceneManager.LoadSceneAsync("Ethan 6"); }
-		//if (this.GetComponent<Image>().sprite == sprites[27-1]) { SceneManager.LoadSceneAsync("Ethan 7"); }
-		//if (this.GetComponent<Image>().sprite == sprites[28-1]) { SceneManager.LoadSceneAsync("Ethan 8"); }
-		//if (this.GetComponent<Image>().sprite == sprites[29-1]) { SceneManager.LoadSceneAsync("Ethan 9"); }
-		//if (this.GetComponent<Image>().sprite == sprites[30-1]) { SceneManager.LoadSceneAsync("Ethan 10"); }
+		// 26. Jetpack 2
+		if (this.GetComponent<Image>().sprite == sprites[26 - 1]) { SceneManager.LoadScene(17); }
+		// 27. Monkey Dodge
+		if (this.GetComponent<Image>().sprite == sprites[27 - 1]) { SceneManager.LoadScene(18); }
+		// 28 Cancelled
+		// 29 Cancelled
+		// 30 Cancelled
 	}
 
 
