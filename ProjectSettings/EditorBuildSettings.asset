@@ -71,4 +71,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Sonny's Scenes/FrogMeditation.unity
     guid: 620e7c66ebfd4cc47b01bfdfbdf664e1
+  - enabled: 1
+    path: Assets/Scenes/Ethan's Scenes/04. Roo Boxing.unity
+    guid: 58e8ae80e2992b340847ba5172e23b46
+  - enabled: 1
+    path: Assets/Scenes/Ethan's Scenes/05. Human Racing.unity
+    guid: 047f2dfa485ed814c9175be2e62f975e
+  - enabled: 1
+    path: Assets/Scenes/Ethan's Scenes/23. Dance Battle.unity
+    guid: 241388357f21b5c46ae2a0f3a18d1009
+  - enabled: 1
+    path: Assets/Scenes/Ethan's Scenes/24. Dodge.unity
+    guid: 831ef28c2327d804999cf27194edb269
   m_configObjects: {}
