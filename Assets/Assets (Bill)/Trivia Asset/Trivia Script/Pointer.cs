@@ -11,7 +11,7 @@ public class Pointer : MonoBehaviour
         {
             return;
         }
-        else
+        else if(TriviaGame.sceneOn == false)
         {
             transform.position = new Vector3(-answerPosX, transform.position.y);
             TriviaGame.pause = true;
@@ -23,7 +23,7 @@ public class Pointer : MonoBehaviour
         {
             return;
         }
-        else
+        else if(TriviaGame.sceneOn == false)
         {
             transform.position = new Vector3(answerPosX,transform.position.y);
             TriviaGame.pause = true;

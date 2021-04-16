@@ -7,7 +7,7 @@ public class TriviaGame : MonoBehaviour
 {
    public Transform pointer1;
    public Transform pointer2;
-   public bool sceneOn;
+   public static bool sceneOn;
    public Question[] questions;
    public Answer[] choices;
    public Transform[] spawnPos;
@@ -75,11 +75,15 @@ public static bool pause = false;
      if(pointer1.position.x == correctAnswer.transform.position.x && pointer2.position.x != correctAnswer.transform.position.x)
      {
         Debug.Log("P1 win");
+        var TM = GameObject.Find("TimeManager").GetComponent<TimeManager>();
+		   TM.zP1Wins();
         pause = true;
      }
      if(pointer2.position.x == correctAnswer.transform.position.x && pointer1.position.x != correctAnswer.transform.position.x)
      {
         Debug.Log("P2 win");
+        var TM = GameObject.Find("TimeManager").GetComponent<TimeManager>();
+		   TM.zP2Wins();
         pause = true;
      }
      if(pause)
@@ -87,10 +91,14 @@ public static bool pause = false;
         if(pointer1.position.x == 0 && pointer2.position.x != correctAnswer.transform.position.x)
         {
            Debug.Log("P1 win");
+           var TM = GameObject.Find("TimeManager").GetComponent<TimeManager>();
+		      TM.zP1Wins();
         }
         if(pointer2.position.x == 0 && pointer1.position.x != correctAnswer.transform.position.x)
         {
            Debug.Log("P2 win");
+           var TM = GameObject.Find("TimeManager").GetComponent<TimeManager>();
+		      TM.zP2Wins();
         }
      }
    }
