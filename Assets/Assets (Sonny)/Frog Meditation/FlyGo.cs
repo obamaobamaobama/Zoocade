@@ -28,6 +28,7 @@ public class FlyGo : MonoBehaviour
 			else
 			{
 				this.GetComponent<RectTransform>().localPosition += new Vector3(-flySpeed, 0) * Time.deltaTime;
+				//AudioSource.PlayClipAtPoint(this.GetComponent<AudioSource>().clip, Camera.main.transform.position);
 			}
 		}
 	}

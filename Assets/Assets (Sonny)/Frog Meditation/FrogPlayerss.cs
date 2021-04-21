@@ -12,11 +12,14 @@ public class FrogPlayerss : MonoBehaviour
 
 	public Collider2D tongueTriggerZone;
 
+	//private AudioSource _frogsound;
+
 
 	private void Awake()
     {
         _anim = this.GetComponent<Animator>();
 		tongueTriggerZone.enabled = false;
+		//_frogsound = this.GetComponent<AudioSource>();
 	}
 	public void FixedUpdate()
     {
@@ -31,7 +34,9 @@ public class FrogPlayerss : MonoBehaviour
     {
         _anim.Play("Frog_Tongue");
 		tongueTriggerZone.enabled = true;
-    }
+		//_frogsound.Play("Tongue");
+		AudioSource.PlayClipAtPoint(this.GetComponent<AudioSource>().clip, Camera.main.transform.position);
+	}
 	
 
 	private void OnTriggerStay2D(Collider2D collision)
@@ -54,6 +59,8 @@ public class FrogPlayerss : MonoBehaviour
 		_anim.SetBool("Caught", true);
 		IcaughtFly = true;
 		Destroy(_collision);
+		//AudioSource.PlayClipAtPoint(this.GetComponent<AudioSource>().clip, Camera.main.transform.position);
+
 
 		//var TM = GameObject.Find("TimeManager").GetComponent<TimeManager>();
 		//if (this.gameObject.name == "FrogMonk P1") { TM.zP1Done(); }

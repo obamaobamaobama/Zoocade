@@ -61,6 +61,6 @@ public class FrogMeditationManager : MonoBehaviour
 
 		if (p1Score > p2Score) { TM.zP1Wins(); }
 		if (p1Score < p2Score) { TM.zP2Wins(); }
-		if (p1Score == p2Score) { TM.zP12Wins(); }
+		if (p1Score == p2Score) { TM.zP12Lose(); }
 	}
 }
