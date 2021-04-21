@@ -19,7 +19,7 @@ public class GuardDogManager : MonoBehaviour
 		if (!p1.GetComponent<CatBurglarPlayers>().GotFish && !p2.GetComponent<CatBurglarPlayers>().GotFish)
 		{
 			// Both players lose
-			TM.zP12Wins();
+			TM.zP12Lose();
 		}
 
 		if (p1.GetComponent<CatBurglarPlayers>().GotFish && !p2.GetComponent<CatBurglarPlayers>().GotFish)
@@ -39,7 +39,7 @@ public class GuardDogManager : MonoBehaviour
 		if (p1.GetComponent<CatBurglarPlayers>().GotCat && p2.GetComponent<CatBurglarPlayers>().GotCat)
 		{
 			//Both players lose
-			TM.zP12Wins();
+			TM.zP12Lose();
 		}
 
 		if (!p1.GetComponent<CatBurglarPlayers>().GotCat && p2.GetComponent<CatBurglarPlayers>().GotCat)

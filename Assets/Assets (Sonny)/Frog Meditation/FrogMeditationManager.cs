@@ -44,7 +44,7 @@ public class FrogMeditationManager : MonoBehaviour
 		if (p1.GetComponent<Point_Calculator_Frog>().FrogKO && p2.GetComponent<Point_Calculator_Frog>().FrogKO)
 		{
 			// Both players lose
-			TM.zP12Wins();
+			TM.zP12Lose();
 		}
 
 		if (p1.GetComponent<Point_Calculator_Frog>().FrogKO && !p2.GetComponent<Point_Calculator_Frog>().FrogKO)

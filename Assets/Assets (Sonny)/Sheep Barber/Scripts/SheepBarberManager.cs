@@ -20,7 +20,7 @@ public class SheepBarberManager : MonoBehaviour
         {
 			//Both players lose
 			//TM.zP12Lose();
-			TM.zP12Wins();
+			TM.zP12Lose();
         }
 
 		if (p1.GetComponent<SheepHealth>().HairCut && !p2.GetComponent<SheepHealth>().HairCut)
