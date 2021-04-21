@@ -224,9 +224,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 0}
   audiodata: {fileID: 0}
-  playerGood: {fileID: 8300000, guid: 534b5daf656b9894f96a799266a003c4, type: 3}
-  playerBaad: {fileID: 8300000, guid: 453c5ac601dd8284685bff76af589dc8, type: 3}
-  flap: {fileID: 8300000, guid: 99264a75c1877684ab48b34d9b06ac9b, type: 3}
+  playerGood: {fileID: 8300000, guid: b2a6cf61b7fee06448997488c1d2aa34, type: 3}
+  playerBaad: {fileID: 8300000, guid: 02050f2ef6f51664e9e1deddb18a7c58, type: 3}
+  flap: {fileID: 8300000, guid: 7b8f45aa2e18aeb42bcd58457454e9ac, type: 3}
   loseGame: {fileID: 8300000, guid: e9ee40cf73110c24cb8651479e09efd8, type: 3}
   microPoints: 0
   alive: 1
@@ -497,9 +497,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 0}
   audiodata: {fileID: 0}
-  playerGood: {fileID: 8300000, guid: 634fadfecd312b34bad2e00fdc078e5c, type: 3}
-  playerBaad: {fileID: 8300000, guid: 453c5ac601dd8284685bff76af589dc8, type: 3}
-  flap: {fileID: 8300000, guid: 99264a75c1877684ab48b34d9b06ac9b, type: 3}
+  playerGood: {fileID: 8300000, guid: b2a6cf61b7fee06448997488c1d2aa34, type: 3}
+  playerBaad: {fileID: 8300000, guid: 02050f2ef6f51664e9e1deddb18a7c58, type: 3}
+  flap: {fileID: 8300000, guid: 7b8f45aa2e18aeb42bcd58457454e9ac, type: 3}
   loseGame: {fileID: 8300000, guid: e9ee40cf73110c24cb8651479e09efd8, type: 3}
   microPoints: 0
   alive: 1

@@ -11,33 +11,61 @@ public class HorsePlayers : MonoBehaviour
 	// win is 1, lose is 2
 	[HideInInspector] private int winLose = 0;
 	private GameObject HRM;
+	private bool winlose = false;
+
+	private AudioSource _audio;
+	public AudioClip soundWin;
+	public AudioClip soundLose;
+	public AudioClip soundWhip;
 
 	private void Awake()
 	{
 		_anim = this.GetComponent<Animator>();
 		HRM = GameObject.Find("HumanRacingManager");
+		_audio = this.GetComponent<AudioSource>();
 	}
 
 
 	public void zWhip()
 	{
-		_anim.SetTrigger("Whip");
-		moveSpeedCur += 0.2f;
+		if (!winlose)
+		{
+			PlaySound(soundWhip);
+			_anim.SetTrigger("Whip");
+			moveSpeedCur += 0.2f;
+		}
 	}
 
 
 	public void zWin()
 	{
-		winLose = 1;
-		_anim.SetTrigger("Win");
-		myHuman.SetActive(false);
+		if (!winlose)
+		{
+			PlaySound(soundWin);
+			winLose = 1;
+			_anim.SetTrigger("Win");
+			myHuman.SetActive(false);
+			winlose = true;
+		}
 	}
 
 	public void zLose()
 	{
-		winLose = 2;
-		_anim.SetTrigger("Lose");
-		myHuman.SetActive(false);
+		if (!winlose)
+		{
+			PlaySound(soundLose);
+			winLose = 2;
+			_anim.SetTrigger("Lose");
+			myHuman.SetActive(false);
+			winlose = true;
+		}
+	}
+
+
+	private void PlaySound(AudioClip _sound)
+	{
+		_audio.clip = _sound;
+		_audio.Play();
 	}
 
 

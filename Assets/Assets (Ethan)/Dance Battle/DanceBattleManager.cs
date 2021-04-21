@@ -12,11 +12,15 @@ public class DanceBattleManager : MonoBehaviour
 	public GameObject p1;
 	public GameObject p2;
 
+	private AudioSource _audio;
+	private bool happenOnce = false;
+
 
 	private void Start()
 	{
 		//InvokeRepeating("SpeedUp", 1f, 1f);
 		InvokeRepeating("CheckWhoWon", 0.25f, 0.25f);
+		_audio = this.GetComponent<AudioSource>();
 	}
 
 	private void SpeedUp()
@@ -34,35 +38,45 @@ public class DanceBattleManager : MonoBehaviour
 
 	public void TimesUp()
 	{
-		GameOver(12);
+		if (!happenOnce)
+		{
+			_audio.Play();
+			GameOver(12);
+			happenOnce = true;
+		}
 	}
 
 	private void GameOver(int _playerWhoWon)
 	{
-		var TM = GameObject.Find("TimeManager").GetComponent<TimeManager>();
-
-		if (_playerWhoWon == 1)
+		if (!happenOnce)
 		{
-			TM.zP1Wins();
-			p1.GetComponent<DanceBattlePlayers>().Won();
-			p2.GetComponent<DanceBattlePlayers>().Lost();
+			var TM = GameObject.Find("TimeManager").GetComponent<TimeManager>();
+
+			if (_playerWhoWon == 1)
+			{
+				TM.zP1Wins();
+				p1.GetComponent<DanceBattlePlayers>().Won();
+				p2.GetComponent<DanceBattlePlayers>().Lost();
+			}
+
+			if (_playerWhoWon == 2)
+			{
+				TM.zP2Wins();
+				p1.GetComponent<DanceBattlePlayers>().Lost();
+				p2.GetComponent<DanceBattlePlayers>().Won();
+			}
+
+			if (_playerWhoWon == 12)
+			{
+				TM.zP12Wins();
+				p1.GetComponent<DanceBattlePlayers>().Won();
+				p2.GetComponent<DanceBattlePlayers>().Won();
+			}
+
+
+			gameOver = true;
+			_audio.Play();
+			happenOnce = true;
 		}
-
-		if (_playerWhoWon == 2)
-		{
-			TM.zP2Wins();
-			p1.GetComponent<DanceBattlePlayers>().Lost();
-			p2.GetComponent<DanceBattlePlayers>().Won();
-		}
-
-		if (_playerWhoWon == 12)
-		{
-			TM.zP12Wins();
-			p1.GetComponent<DanceBattlePlayers>().Won();
-			p2.GetComponent<DanceBattlePlayers>().Won();
-		}
-
-
-		gameOver = true;
 	}
 }

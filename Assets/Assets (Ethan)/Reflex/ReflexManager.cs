@@ -8,11 +8,15 @@ public class ReflexManager : MonoBehaviour
 	[SerializeField] private float bananaFallTimer;
 	[SerializeField] private bool bananaFell = false;
 
+	private AudioSource _audio;
+	public AudioClip soundBananaFall;
+
 	private void Awake()
 	{
 		//bananaSpeed = Random.Range(250, 750);
 		bananaSpeed = Random.Range(250, 550);
 		bananaFallTimer = Random.Range(2, 5);
+		_audio = this.GetComponent<AudioSource>();
 	}
 
 	private void Update()
@@ -28,6 +32,8 @@ public class ReflexManager : MonoBehaviour
 				GameObject.Find("P1 Banana").GetComponent<BananaFall>().bananaDrop = true;
 				GameObject.Find("P2 Banana").GetComponent<BananaFall>().bananaDrop = true;
 				bananaFell = true;
+				_audio.clip = soundBananaFall;
+				_audio.Play();
 			}
 		}
 	}

@@ -24,22 +24,35 @@ public class ReflexMonkeyController : MonoBehaviour
 
 	public bool IcaughtBanana = false;
 
+	private AudioSource _audio;
+	public AudioClip soundCatch;
+	public AudioClip soundWin;
+
 
 	private void Awake()
 	{
 		animController = this.GetComponent<Animator>();
 		animController.SetBool("Caught", false);
+		_audio = this.GetComponent<AudioSource>();
 	}
 
 	public void zCatch()
 	{
-		if (!triedToCatch)
+		if (!triedToCatch && !IcaughtBanana)
 		{
 			//InvokeRepeating("CatchAnim", 0f, 0.05f);
 			//animController.clip = animController.GetClip("ReflexMonkeyCatch");
+			PlaySound(soundCatch);
 			animController.SetTrigger("Catch");
+			triedToCatch = true;
+			Invoke("Yeeet", 0.65f);
 			//triedToCatch = true;
 		}
+	}
+
+	private void Yeeet()
+	{
+		triedToCatch = false;
 	}
 
 	/*private void CatchAnim()
@@ -87,10 +100,18 @@ public class ReflexMonkeyController : MonoBehaviour
 	{
 		animController.SetBool("Caught", true);
 		IcaughtBanana = true;
+		PlaySound(soundWin);
 		Destroy(_collision);
 
 		var TM = GameObject.Find("TimeManager").GetComponent<TimeManager>();
 		if (this.gameObject.name == "P1") { TM.zP1Done(); }
 		if (this.gameObject.name == "P2") { TM.zP2Done(); }
+	}
+
+
+	private void PlaySound(AudioClip _sound)
+	{
+		_audio.clip = _sound;
+		_audio.Play();
 	}
 }
