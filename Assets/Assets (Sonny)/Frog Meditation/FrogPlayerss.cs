@@ -12,6 +12,11 @@ public class FrogPlayerss : MonoBehaviour
 
 	public Collider2D tongueTriggerZone;
 
+	//public AudioSource audiodata;
+	//public AudioClip frogTongue;
+	//public AudioClip frogCatch;
+	//public AudioClip frogBoom;
+
 	//private AudioSource _frogsound;
 
 
@@ -34,7 +39,8 @@ public class FrogPlayerss : MonoBehaviour
     {
         _anim.Play("Frog_Tongue");
 		tongueTriggerZone.enabled = true;
-		//_frogsound.Play("Tongue");
+		//audiodata.clip = frogTongue;
+		//audiodata.Play();
 		AudioSource.PlayClipAtPoint(this.GetComponent<AudioSource>().clip, Camera.main.transform.position);
 	}
 	
@@ -59,6 +65,8 @@ public class FrogPlayerss : MonoBehaviour
 		_anim.SetBool("Caught", true);
 		IcaughtFly = true;
 		Destroy(_collision);
+		//audiodata.clip = frogCatch;
+		//audiodata.Play();
 		//AudioSource.PlayClipAtPoint(this.GetComponent<AudioSource>().clip, Camera.main.transform.position);
 
 
