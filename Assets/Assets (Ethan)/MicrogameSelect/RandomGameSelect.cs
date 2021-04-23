@@ -42,7 +42,7 @@ public class RandomGameSelect : MonoBehaviour
 		//this.GetComponent<Image>().sprite = sprites[Random.Range(0, sprites.Length)];
 		// when all games are added
 		//int[] numbers = { 11-1, 12-1, 13-1, 14-1, 21-1, 22-1, 25-1 };
-		int[] numbers = { 4-1, 5-1, 6-1, 7-1, 8-1, 11-1, 12-1, 13-1, 14-1, 15-1, 16-1, 17-1, 18-1, 19-1, 20-1, 21-1, 22-1, 23-1, 24-1, 25-1, 26-1, 27-1 };
+		int[] numbers = { 5-1, 6-1, 7-1, 8-1, 11-1, 12-1, 13-1, 14-1, 15-1, 16-1, 17-1, 18-1, 19-1, 20-1, 21-1, 22-1, 23-1, 24-1, 25-1, 26-1, 27-1};
 		int randomIndex = Random.Range(0, numbers.Length);
 		int randomIntFromNumbers = numbers[randomIndex];
 		this.GetComponent<Image>().sprite = sprites[randomIntFromNumbers];
@@ -90,8 +90,8 @@ public class RandomGameSelect : MonoBehaviour
 		//if (this.GetComponent<Image>().sprite == sprites[1-1]) { SceneManager.LoadSceneAsync("Surfing Fish"); }
 		//if (this.GetComponent<Image>().sprite == sprites[2-1]) { SceneManager.LoadSceneAsync("Frog Meditation"); }
 		//if (this.GetComponent<Image>().sprite == sprites[3-1]) { SceneManager.LoadSceneAsync("Flea Circus"); }
-		// 04. Roo Boxing
-		if (this.GetComponent<Image>().sprite == sprites[4 - 1]) { SceneManager.LoadScene(22); }
+		// 04. Roo Boxing (Cancelled)
+		//if (this.GetComponent<Image>().sprite == sprites[4 - 1]) { SceneManager.LoadScene(22); }
 		// 05. Human Racing
 		if (this.GetComponent<Image>().sprite == sprites[5 - 1]) { SceneManager.LoadScene(23); }
 

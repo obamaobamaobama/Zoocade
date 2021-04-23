@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class FadeIn : MonoBehaviour
 {
@@ -13,6 +14,8 @@ public class FadeIn : MonoBehaviour
 		}
 		else
 		{
+			var imaage = this.GetComponent<Image>();
+			imaage.enabled = false;
 			this.enabled = false;
 		}
 	}
