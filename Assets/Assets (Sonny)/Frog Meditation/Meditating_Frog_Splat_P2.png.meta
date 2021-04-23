@@ -1,19 +1,13 @@
 fileFormatVersion: 2
-guid: 02cdca4d7d80dc64881ea1a6026e48e0
+guid: 47464ca4c4c68b34a8d126a04f0f1107
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2243742615385503591
-    second: Meditating_Frog_P2_Idle
+      213: -7121226136194470852
+    second: Meditating_Frog_Splat_P2_13
   - first:
-      213: -3780456452795744262
-    second: Meditating_Frog_P2_Tongue
-  - first:
-      213: -6552165283201485029
-    second: Meditating_Frog_P2_Win
-  - first:
-      213: -2077766889734509620
-    second: Meditating_Frog_P2_1
+      213: 6425855098506890983
+    second: Meditating_Frog_Splat_P2_14
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -99,54 +93,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Meditating_Frog_P2_Idle
+      name: Meditating_Frog_Splat_P2_13
       rect:
         serializedVersion: 2
-        x: 12
-        y: 266
+        x: 76
+        y: 10
         width: 41
-        height: 52
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 76775755500632f10800000000000000
-      internalID: 2243742615385503591
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Meditating_Frog_P2_Tongue
-      rect:
-        serializedVersion: 2
-        x: 140
-        y: 138
-        width: 41
-        height: 53
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: affb64ac2ee198bc0800000000000000
-      internalID: -3780456452795744262
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Meditating_Frog_P2_1
-      rect:
-        serializedVersion: 2
-        x: 75
-        y: 265
-        width: 42
         height: 53
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -155,8 +107,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ccb6e43b50a4a23e0800000000000000
-      internalID: -2077766889734509620
+      spriteID: c3ca6ea1f825c2d90800000000000000
+      internalID: -7121226136194470852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Meditating_Frog_Splat_P2_14
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 10
+        width: 41
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7eec2ac9a293d2950800000000000000
+      internalID: 6425855098506890983
       vertices: []
       indices: 
       edges: []
