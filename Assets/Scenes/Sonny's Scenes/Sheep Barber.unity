@@ -1059,6 +1059,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1756384702}
     m_Modifications:
+    - target: {fileID: 7009422588334446980, guid: 1b088b442a95dff40b2f8d375c10abde,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 805cde0e8d367254eb0ad2a7f0820b4f, type: 2}
     - target: {fileID: 7009422588334446981, guid: 1b088b442a95dff40b2f8d375c10abde,
         type: 3}
       propertyPath: m_Name
@@ -1124,6 +1129,12 @@ PrefabInstance:
       propertyPath: m_FlipX
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7009422588334446987, guid: 1b088b442a95dff40b2f8d375c10abde,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -8190262424263450492, guid: a9a76a9568bf81240bc625cc6ae97462,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1b088b442a95dff40b2f8d375c10abde, type: 3}
 --- !u!1 &757344068
