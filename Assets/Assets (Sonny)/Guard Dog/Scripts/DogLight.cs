@@ -56,6 +56,7 @@ public class DogLight : MonoBehaviour
 	{
 		_anim.SetBool("DogLaugh", true);
 		Gotcha = true;
+		AudioSource.PlayClipAtPoint(this.GetComponent<AudioSource>().clip, Camera.main.transform.position);
 		//Destroy(_collision);
 
 		var TM = GameObject.Find("TimeManager").GetComponent<TimeManager>();

@@ -29,6 +29,7 @@ public class ScissorsController : MonoBehaviour
 	{
 		_anim.Play("Scissors");
 		scissorsTriggerZone.enabled = true;
+		AudioSource.PlayClipAtPoint(this.GetComponent<AudioSource>().clip, Camera.main.transform.position);
 	}
 
 

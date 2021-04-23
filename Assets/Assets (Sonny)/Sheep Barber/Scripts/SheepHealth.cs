@@ -54,7 +54,9 @@ public class SheepHealth : MonoBehaviour
             _anim.SetBool("Cut", true);
 
             HairCut = true;
-           
+
+            AudioSource.PlayClipAtPoint(this.GetComponent<AudioSource>().clip, Camera.main.transform.position);
+
             GameObject.Find("Control_Manager").GetComponent<ControlManager>().enabled = false;
             if (this.gameObject.name == "Sheep_Afro P1") { TM.zP1Done(); TM.zP1Wins(); }
             if (this.gameObject.name == "Sheep_Afro P2") { TM.zP2Done(); TM.zP2Wins(); }

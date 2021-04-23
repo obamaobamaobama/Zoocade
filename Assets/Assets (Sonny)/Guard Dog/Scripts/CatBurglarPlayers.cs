@@ -46,6 +46,7 @@ public class CatBurglarPlayers : MonoBehaviour
 		{
 			_anim.SetBool("Caught", true);
 			GotCat = true;
+			//AudioSource.PlayClipAtPoint(this.GetComponent<AudioSource>().clip, Camera.main.transform.position);
 			GameObject.Find("Control_Manager").GetComponent<ControlManager>().enabled = false;
 			if (this.gameObject.name == "CatBurglar P1") { TM.zP1Done(); }
 			if (this.gameObject.name == "CatBurglar P2") { TM.zP2Done(); }

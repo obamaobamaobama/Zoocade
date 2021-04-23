@@ -12,7 +12,7 @@ public class BurglarMovement : MonoBehaviour
     // Ethan and Bill wrote this
     public float boundaryLimit = 4;
 
-    public AudioSource speaker;
+    //public AudioSource speaker;
 
 
     public Transform player;
@@ -21,6 +21,7 @@ public class BurglarMovement : MonoBehaviour
         if (Mathf.Round(transform.position.x) > -boundaryLimit)
         {
             transform.position = transform.position - new Vector3(speed * Time.deltaTime, 0);
+            //AudioSource.PlayClipAtPoint(this.GetComponent<AudioSource>().clip, Camera.main.transform.position);
         }
 
     }
@@ -30,6 +31,7 @@ public class BurglarMovement : MonoBehaviour
         if (Mathf.Round(transform.position.x) < boundaryLimit)
         {
             transform.position = transform.position + new Vector3(speed * Time.deltaTime, 0);
+            //AudioSource.PlayClipAtPoint(this.GetComponent<AudioSource>().clip, Camera.main.transform.position);
 
         }
 
@@ -42,7 +44,7 @@ public class BurglarMovement : MonoBehaviour
             vsp = 0;
             vsp += jumpForce;
             grounded = false;
-            speaker.Play();
+            //speaker.Play();
         }
 
     }
