@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//A simple script for calling a trigger zone when the Player Frog unleashes its tongue and for destroying a colliding object.
+
 public class FrogPlayerss : MonoBehaviour
 {
     private Animator _anim;

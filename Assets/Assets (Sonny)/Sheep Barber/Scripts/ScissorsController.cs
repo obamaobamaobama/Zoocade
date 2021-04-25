@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//A script for calling a trigger zone and sfx during the Player scissor's "snip" animation state and for attributing damage points to the collider
+
 public class ScissorsController : MonoBehaviour
 {
 	private Animator _anim;

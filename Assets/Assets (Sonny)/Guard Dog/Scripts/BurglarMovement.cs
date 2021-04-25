@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//A script for attributing movement direction and speed to the Player Cat Burglars - written by Bill and Ethan
+
 public class BurglarMovement : MonoBehaviour
 {
     public float speed;

@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+//A simple script for attributing score points and calling animation states when the Player Frog's tongue collides with an object.
+
 public class Point_Calculator_Frog : MonoBehaviour
 {
     public Text p1txt;

@@ -7,6 +7,8 @@ using UnityEngine.Events;
 //When the object dies it will call the objectHasDied Event.
 //Use the inspector to have this event call other function on other scripts. 
 
+//A script for attributing health points to the Sheep's hair and for calling animation states and sfx when HP reaches certain values
+
 public class SheepHealth : MonoBehaviour
 {
     public int health;

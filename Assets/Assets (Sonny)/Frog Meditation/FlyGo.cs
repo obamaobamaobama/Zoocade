@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//A script attributing movement direction and speed for the fly game objects
+
 public class FlyGo : MonoBehaviour
 {
     private float flySpeed;

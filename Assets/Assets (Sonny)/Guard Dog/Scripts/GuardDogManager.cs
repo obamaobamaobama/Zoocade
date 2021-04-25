@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//A script for calling the win or lose conditions for the Guard Dog game
+
 public class GuardDogManager : MonoBehaviour
 {
 	public void zTimesUp()

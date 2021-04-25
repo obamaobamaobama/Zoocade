@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//A script for calling Player win or lose conditions for the Frog Meditation game
+
 public class FrogMeditationManager : MonoBehaviour
 {
 	//public float flySpeed;

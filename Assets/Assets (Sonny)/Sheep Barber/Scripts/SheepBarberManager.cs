@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//A script for calling the win or lose conditions for the Sheep Barber game
+
 public class SheepBarberManager : MonoBehaviour
 {
     public void zTimesUp()

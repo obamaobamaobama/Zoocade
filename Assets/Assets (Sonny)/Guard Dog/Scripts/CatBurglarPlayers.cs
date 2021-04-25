@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//A script for calling the Player Cat's win or lose animation states upon collision with the spotlight or fish
+
 public class CatBurglarPlayers : MonoBehaviour
 {
 	private Animator _anim;

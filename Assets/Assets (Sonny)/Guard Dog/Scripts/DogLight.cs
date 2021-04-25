@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//A script for calling a trigger zone during the enemy's "flashlight on" animation state and for calling animation and sfx upon Player collision
+
 public class DogLight : MonoBehaviour
 {
 	private Animator _anim;
