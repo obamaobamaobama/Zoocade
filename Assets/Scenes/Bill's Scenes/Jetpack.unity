@@ -760,6 +760,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 5494306467894246594, guid: 506f28d6f17ae2243957eb6de3f615b2,
+        type: 3}
+      propertyPath: timeToStop
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 5615352630318174689, guid: 506f28d6f17ae2243957eb6de3f615b2,
         type: 3}
       propertyPath: m_Name
@@ -1415,6 +1420,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: P1 arrow
+      objectReference: {fileID: 0}
+    - target: {fileID: 2749099989503840973, guid: 9436752dbd6cfa642887d68f7caac16e,
+        type: 3}
+      propertyPath: timeToStop
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9436752dbd6cfa642887d68f7caac16e, type: 3}

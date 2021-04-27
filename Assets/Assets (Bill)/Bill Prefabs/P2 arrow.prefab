@@ -97,4 +97,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   arrow: {fileID: 2495189325681662036}
   timeToShow: 0.2
-  timeToStop: 1
+  timeToStop: 2

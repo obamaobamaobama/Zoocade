@@ -8,7 +8,7 @@ public class ArrowFlashing : MonoBehaviour
     public float timeToShow = 0.2f;
     public float timeToStop = 1;
 
-     void Start()
+     void Awake()
     {
         arrow.enabled = false;
     }
