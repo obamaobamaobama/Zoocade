@@ -137,7 +137,7 @@ public class RandomGameSelect : MonoBehaviour
 		// 23. Dance Battle
 		if (this.GetComponent<Image>().sprite == sprites[23 - 1]) { SceneManager.LoadScene(24); }
 		// 24. Dodge
-		if (this.GetComponent<Image>().sprite == sprites[23 - 1]) { SceneManager.LoadScene(25); }
+		if (this.GetComponent<Image>().sprite == sprites[24 - 1]) { SceneManager.LoadScene(25); }
 		// 25. Strength Test
 		if (this.GetComponent<Image>().sprite == sprites[25-1]) { SceneManager.LoadScene(4); }
 
@@ -154,9 +154,9 @@ public class RandomGameSelect : MonoBehaviour
 
 	private void Fade()
 	{
-		if (backgroundFade.GetComponent<RectTransform>().localScale.x < 1)
+		if (backgroundFade.GetComponent<RectTransform>().localScale.x < 3.5f)
 		{
-			backgroundFade.GetComponent<RectTransform>().localScale += new Vector3(0.01f, 0.01f);
+			backgroundFade.GetComponent<RectTransform>().localScale += new Vector3(5f, 5f) * Time.deltaTime;
 		}
 		else
 		{

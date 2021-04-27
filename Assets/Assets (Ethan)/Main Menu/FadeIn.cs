@@ -10,7 +10,7 @@ public class FadeIn : MonoBehaviour
 	{
 		if (this.GetComponent<RectTransform>().localScale.x >= 0)
 		{
-			this.GetComponent<RectTransform>().localScale -= new Vector3(0.01f, 0.01f);
+			this.GetComponent<RectTransform>().localScale -= new Vector3(10f, 10f) * Time.deltaTime;
 		}
 		else
 		{

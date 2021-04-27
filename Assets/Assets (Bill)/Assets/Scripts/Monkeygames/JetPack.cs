@@ -16,7 +16,11 @@ public class JetPack : MonoBehaviour
     }
     public void zThrust()
     {
-        rb.AddForce(Vector2.up * thrustForce * Time.deltaTime);
+        // *E
+        if (rb != null)
+        {
+            rb.AddForce(Vector2.up * thrustForce * Time.deltaTime);
+        }
     }
     public void zMoveLeft()
     {

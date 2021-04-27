@@ -85,9 +85,14 @@ public class ControlManager : MonoBehaviour
 
 
         // DEBUG (REMOVE BEFORE RELEASE)
+        // NAH KEEP IN
         if (Input.GetKeyDown("r"))
 		{
-            SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().name);
+            //SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().name);
+            if (GameObject.Find("TimeManager") != null)
+			{
+                GameObject.Find("TimeManager").GetComponent<TimeManager>().TimesUp.Invoke();
+            }
 		}
 	}
 }
