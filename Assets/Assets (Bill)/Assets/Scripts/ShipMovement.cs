@@ -12,6 +12,7 @@ public class ShipMovement : MonoBehaviour
     public float coolDown;
     public GameObject bullet;
     public GameObject bulletClone;
+    public AudioSource audioSource;
     // Ethan wrote this
     public float boundaryLimit = 5f;
 
@@ -95,6 +96,7 @@ public class ShipMovement : MonoBehaviour
         {
             bulletClone = Instantiate(bullet, new Vector3(transform.position.x,(transform.position.y + 0.5f),0), transform.rotation) as GameObject;
             readyToShoot = false;
+            audioSource.Play();
         }
 
     }
